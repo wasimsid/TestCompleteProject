@@ -1,0 +1,1485 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="message 2">
+			<Node name="visualizer">
+				<Node name="original">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="696"/>
+					<Prp name="object left" type="I" value="596"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="686"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="246"/>
+					<Prp name="datetime" type="D" value="45247.5556365741"/>
+					<Prp name="click point y" type="I" value="258"/>
+					<Prp name="line #" type="I" value="2"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;selectProduct&quot;]"/>
+					<Prp name="object bottom" type="I" value="265"/>
+					<Prp name="image file name" type="S" value="tcvi1560766734147240.png"/>
+				</Node>
+				<Node name="diff">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="-1"/>
+					<Prp name="object left" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="-1"/>
+					<Prp name="datetime" type="D" value="0"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="2"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value=""/>
+					<Prp name="object bottom" type="I" value="-1"/>
+					<Prp name="image file name" type="S" value="visImage1_Dif.png"/>
+				</Node>
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="696"/>
+					<Prp name="object left" type="I" value="596"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="686"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="246"/>
+					<Prp name="datetime" type="D" value="45247.5625665278"/>
+					<Prp name="click point y" type="I" value="258"/>
+					<Prp name="line #" type="I" value="2"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;selectProduct&quot;]"/>
+					<Prp name="object bottom" type="I" value="265"/>
+					<Prp name="image file name" type="S" value="visImage1.png"/>
+				</Node>
+			</Node>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="line no" type="I" value="2"/>
+			<Prp name="date" type="D" value="45247.7917383796"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="id" type="I" value="2"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="A click at point (90, 12) with no key pressed.&#xA;&#xA;Tested object:&#xA;Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;selectProduct&quot;]&#xA;(Sys[&quot;Browser&quot;](&quot;edge&quot;)[&quot;Page&quot;](&quot;http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Process.aspx&quot;)[&quot;Form&quot;](&quot;aspnetForm&quot;)[&quot;Table&quot;](0)[&quot;Cell&quot;](0, 1)[&quot;Panel&quot;](1)[&quot;Table&quot;](&quot;fmwOrder&quot;)[&quot;Cell&quot;](0, 0)[&quot;Select&quot;](&quot;ddlProduct&quot;))"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 15">
+			<Node name="visualizer">
+				<Node name="original">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="642"/>
+					<Prp name="object left" type="I" value="596"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="321"/>
+					<Prp name="datetime" type="D" value="45247.5557986111"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="8"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxDiscount&quot;]"/>
+					<Prp name="object bottom" type="I" value="342"/>
+					<Prp name="image file name" type="S" value="tcvi15607800312374492.png"/>
+				</Node>
+				<Node name="diff">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="-1"/>
+					<Prp name="object left" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="-1"/>
+					<Prp name="datetime" type="D" value="0"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="8"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value=""/>
+					<Prp name="object bottom" type="I" value="-1"/>
+					<Prp name="image file name" type="S" value="visImage14_Dif.png"/>
+				</Node>
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="642"/>
+					<Prp name="object left" type="I" value="596"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="321"/>
+					<Prp name="datetime" type="D" value="45247.5626944792"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="8"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxDiscount&quot;]"/>
+					<Prp name="object bottom" type="I" value="342"/>
+					<Prp name="image file name" type="S" value="visImage14.png"/>
+				</Node>
+			</Node>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="The text '14' was entered in the text editor."/>
+			<Prp name="line no" type="I" value="8"/>
+			<Prp name="date" type="D" value="45247.7918623148"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="id" type="I" value="15"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxDiscount&quot;]&#xA;(Sys[&quot;Browser&quot;](&quot;edge&quot;)[&quot;Page&quot;](&quot;http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Process.aspx&quot;)[&quot;Form&quot;](&quot;aspnetForm&quot;)[&quot;Table&quot;](0)[&quot;Cell&quot;](0, 1)[&quot;Panel&quot;](1)[&quot;Table&quot;](&quot;fmwOrder&quot;)[&quot;Cell&quot;](0, 0)[&quot;Textbox&quot;](&quot;txtDiscount&quot;))"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="child data"/>
+		<Node name="message 10">
+			<Node name="visualizer">
+				<Node name="original">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="642"/>
+					<Prp name="object left" type="I" value="596"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="296"/>
+					<Prp name="datetime" type="D" value="45247.555775463"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="7"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxPricePerUnit&quot;]"/>
+					<Prp name="object bottom" type="I" value="317"/>
+					<Prp name="image file name" type="S" value="tcvi15607770312374471.png"/>
+				</Node>
+				<Node name="diff">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="-1"/>
+					<Prp name="object left" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="-1"/>
+					<Prp name="datetime" type="D" value="0"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="7"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value=""/>
+					<Prp name="object bottom" type="I" value="-1"/>
+					<Prp name="image file name" type="S" value="visImage9_Dif.png"/>
+				</Node>
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="642"/>
+					<Prp name="object left" type="I" value="596"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="296"/>
+					<Prp name="datetime" type="D" value="45247.5626505556"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="7"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxPricePerUnit&quot;]"/>
+					<Prp name="object bottom" type="I" value="317"/>
+					<Prp name="image file name" type="S" value="visImage9.png"/>
+				</Node>
+			</Node>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="The text '45' was entered in the text editor."/>
+			<Prp name="line no" type="I" value="7"/>
+			<Prp name="date" type="D" value="45247.7918189352"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="id" type="I" value="10"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxPricePerUnit&quot;]&#xA;(Sys[&quot;Browser&quot;](&quot;edge&quot;)[&quot;Page&quot;](&quot;http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Process.aspx&quot;)[&quot;Form&quot;](&quot;aspnetForm&quot;)[&quot;Table&quot;](0)[&quot;Cell&quot;](0, 1)[&quot;Panel&quot;](1)[&quot;Table&quot;](&quot;fmwOrder&quot;)[&quot;Cell&quot;](0, 0)[&quot;Textbox&quot;](&quot;txtUnitPrice&quot;))"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 18">
+			<Node name="visualizer">
+				<Node name="original">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="802"/>
+					<Prp name="object left" type="I" value="596"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="447"/>
+					<Prp name="datetime" type="D" value="45247.5559259259"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="11"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxStreet&quot;]"/>
+					<Prp name="object bottom" type="I" value="468"/>
+					<Prp name="image file name" type="S" value="tcvi15607903121472416.png"/>
+				</Node>
+				<Node name="diff">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="-1"/>
+					<Prp name="object left" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="-1"/>
+					<Prp name="datetime" type="D" value="0"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="11"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value=""/>
+					<Prp name="object bottom" type="I" value="-1"/>
+					<Prp name="image file name" type="S" value="visImage17_Dif.png"/>
+				</Node>
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="802"/>
+					<Prp name="object left" type="I" value="596"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="447"/>
+					<Prp name="datetime" type="D" value="45247.5627059722"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="11"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxStreet&quot;]"/>
+					<Prp name="object bottom" type="I" value="468"/>
+					<Prp name="image file name" type="S" value="visImage17.png"/>
+				</Node>
+			</Node>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="The text 'Highway' was entered in the text editor."/>
+			<Prp name="line no" type="I" value="11"/>
+			<Prp name="date" type="D" value="45247.7918741898"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="id" type="I" value="18"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxStreet&quot;]&#xA;(Sys[&quot;Browser&quot;](&quot;edge&quot;)[&quot;Page&quot;](&quot;http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Process.aspx&quot;)[&quot;Form&quot;](&quot;aspnetForm&quot;)[&quot;Table&quot;](0)[&quot;Cell&quot;](0, 1)[&quot;Panel&quot;](1)[&quot;Table&quot;](&quot;fmwOrder&quot;)[&quot;Cell&quot;](0, 0)[&quot;Textbox&quot;](&quot;TextBox2&quot;))"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 8">
+			<Node name="visualizer">
+				<Node name="original">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="100"/>
+					<Prp name="object left" type="I" value="0"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="62"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="0"/>
+					<Prp name="datetime" type="D" value="45247.5556597222"/>
+					<Prp name="click point y" type="I" value="19"/>
+					<Prp name="line #" type="I" value="5"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;selectProduct&quot;]"/>
+					<Prp name="object bottom" type="I" value="52"/>
+					<Prp name="image file name" type="S" value="tcvi15607683121472411.png"/>
+				</Node>
+				<Node name="diff">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="-1"/>
+					<Prp name="object left" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="-1"/>
+					<Prp name="datetime" type="D" value="0"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="5"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value=""/>
+					<Prp name="object bottom" type="I" value="-1"/>
+					<Prp name="image file name" type="S" value="visImage7_Dif.png"/>
+				</Node>
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="696"/>
+					<Prp name="object left" type="I" value="596"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="646"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="246"/>
+					<Prp name="datetime" type="D" value="45247.5626189468"/>
+					<Prp name="click point y" type="I" value="255"/>
+					<Prp name="line #" type="I" value="5"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;selectProduct&quot;]"/>
+					<Prp name="object bottom" type="I" value="265"/>
+					<Prp name="image file name" type="S" value="visImage7.png"/>
+				</Node>
+			</Node>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="The combo box item 'FamilyAlbum' was selected."/>
+			<Prp name="line no" type="I" value="5"/>
+			<Prp name="date" type="D" value="45247.7918137616"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="id" type="I" value="8"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;selectProduct&quot;]&#xA;(Sys[&quot;Browser&quot;](&quot;edge&quot;)[&quot;Page&quot;](&quot;http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Process.aspx&quot;)[&quot;Form&quot;](&quot;aspnetForm&quot;)[&quot;Table&quot;](0)[&quot;Cell&quot;](0, 1)[&quot;Panel&quot;](1)[&quot;Table&quot;](&quot;fmwOrder&quot;)[&quot;Cell&quot;](0, 0)[&quot;Select&quot;](&quot;ddlProduct&quot;))"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 14">
+			<Node name="visualizer">
+				<Node name="original">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="642"/>
+					<Prp name="object left" type="I" value="596"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="296"/>
+					<Prp name="datetime" type="D" value="45247.555775463"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="7"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxPricePerUnit&quot;]"/>
+					<Prp name="object bottom" type="I" value="317"/>
+					<Prp name="image file name" type="S" value="tcvi15607770312374472.png"/>
+				</Node>
+				<Node name="diff">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="-1"/>
+					<Prp name="object left" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="-1"/>
+					<Prp name="datetime" type="D" value="0"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="7"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value=""/>
+					<Prp name="object bottom" type="I" value="-1"/>
+					<Prp name="image file name" type="S" value="visImage13_Dif.png"/>
+				</Node>
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="642"/>
+					<Prp name="object left" type="I" value="596"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="296"/>
+					<Prp name="datetime" type="D" value="45247.5626919329"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="7"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxPricePerUnit&quot;]"/>
+					<Prp name="object bottom" type="I" value="317"/>
+					<Prp name="image file name" type="S" value="visImage13.png"/>
+				</Node>
+			</Node>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="The text '34' was entered in the text editor."/>
+			<Prp name="line no" type="I" value="7"/>
+			<Prp name="date" type="D" value="45247.7918603356"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="id" type="I" value="14"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxPricePerUnit&quot;]&#xA;(Sys[&quot;Browser&quot;](&quot;edge&quot;)[&quot;Page&quot;](&quot;http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Process.aspx&quot;)[&quot;Form&quot;](&quot;aspnetForm&quot;)[&quot;Table&quot;](0)[&quot;Cell&quot;](0, 1)[&quot;Panel&quot;](1)[&quot;Table&quot;](&quot;fmwOrder&quot;)[&quot;Cell&quot;](0, 0)[&quot;Textbox&quot;](&quot;txtUnitPrice&quot;))"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 4">
+			<Node name="visualizer">
+				<Node name="original">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="100"/>
+					<Prp name="object left" type="I" value="0"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="62"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="0"/>
+					<Prp name="datetime" type="D" value="45247.5556597222"/>
+					<Prp name="click point y" type="I" value="19"/>
+					<Prp name="line #" type="I" value="5"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;selectProduct&quot;]"/>
+					<Prp name="object bottom" type="I" value="52"/>
+					<Prp name="image file name" type="S" value="tcvi1560768312147241.png"/>
+				</Node>
+				<Node name="diff">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="-1"/>
+					<Prp name="object left" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="-1"/>
+					<Prp name="datetime" type="D" value="0"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="5"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value=""/>
+					<Prp name="object bottom" type="I" value="-1"/>
+					<Prp name="image file name" type="S" value="visImage3_Dif.png"/>
+				</Node>
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="696"/>
+					<Prp name="object left" type="I" value="596"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="646"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="246"/>
+					<Prp name="datetime" type="D" value="45247.5625821412"/>
+					<Prp name="click point y" type="I" value="255"/>
+					<Prp name="line #" type="I" value="5"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;selectProduct&quot;]"/>
+					<Prp name="object bottom" type="I" value="265"/>
+					<Prp name="image file name" type="S" value="visImage3.png"/>
+				</Node>
+			</Node>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="The combo box item 'MyMoney' was selected."/>
+			<Prp name="line no" type="I" value="5"/>
+			<Prp name="date" type="D" value="45247.7917632523"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="id" type="I" value="4"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;selectProduct&quot;]&#xA;(Sys[&quot;Browser&quot;](&quot;edge&quot;)[&quot;Page&quot;](&quot;http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Process.aspx&quot;)[&quot;Form&quot;](&quot;aspnetForm&quot;)[&quot;Table&quot;](0)[&quot;Cell&quot;](0, 1)[&quot;Panel&quot;](1)[&quot;Table&quot;](&quot;fmwOrder&quot;)[&quot;Cell&quot;](0, 0)[&quot;Select&quot;](&quot;ddlProduct&quot;))"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 0">
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="Navigating to the http://secure.smartbearsoftware.com/samples/TestComplete11/W... page."/>
+			<Prp name="line no" type="I" value="0"/>
+			<Prp name="date" type="D" value="45247.7917178356"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="URL: http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Process.aspx&#xA;&#xA;Aliases[&quot;browser&quot;]"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 19">
+			<Node name="visualizer">
+				<Node name="original">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="802"/>
+					<Prp name="object left" type="I" value="596"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="472"/>
+					<Prp name="datetime" type="D" value="45247.5559722222"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="12"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxCity&quot;]"/>
+					<Prp name="object bottom" type="I" value="496"/>
+					<Prp name="image file name" type="S" value="tcvi15607941401472418.png"/>
+				</Node>
+				<Node name="diff">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="-1"/>
+					<Prp name="object left" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="-1"/>
+					<Prp name="datetime" type="D" value="0"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="12"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value=""/>
+					<Prp name="object bottom" type="I" value="-1"/>
+					<Prp name="image file name" type="S" value="visImage18_Dif.png"/>
+				</Node>
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="802"/>
+					<Prp name="object left" type="I" value="596"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="472"/>
+					<Prp name="datetime" type="D" value="45247.5627101042"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="12"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxCity&quot;]"/>
+					<Prp name="object bottom" type="I" value="493"/>
+					<Prp name="image file name" type="S" value="visImage18.png"/>
+				</Node>
+			</Node>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="The text 'Pune' was entered in the text editor."/>
+			<Prp name="line no" type="I" value="12"/>
+			<Prp name="date" type="D" value="45247.7918782639"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="id" type="I" value="19"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxCity&quot;]&#xA;(Sys[&quot;Browser&quot;](&quot;edge&quot;)[&quot;Page&quot;](&quot;http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Process.aspx&quot;)[&quot;Form&quot;](&quot;aspnetForm&quot;)[&quot;Table&quot;](0)[&quot;Cell&quot;](0, 1)[&quot;Panel&quot;](1)[&quot;Table&quot;](&quot;fmwOrder&quot;)[&quot;Cell&quot;](0, 0)[&quot;Textbox&quot;](&quot;TextBox3&quot;))"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 17">
+			<Node name="visualizer">
+				<Node name="original">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="802"/>
+					<Prp name="object left" type="I" value="596"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="447"/>
+					<Prp name="datetime" type="D" value="45247.5559259259"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="10"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxStreet&quot;]"/>
+					<Prp name="object bottom" type="I" value="468"/>
+					<Prp name="image file name" type="S" value="tcvi15607902032374416.png"/>
+				</Node>
+				<Node name="diff">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="-1"/>
+					<Prp name="object left" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="-1"/>
+					<Prp name="datetime" type="D" value="0"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="10"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value=""/>
+					<Prp name="object bottom" type="I" value="-1"/>
+					<Prp name="image file name" type="S" value="visImage16_Dif.png"/>
+				</Node>
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="802"/>
+					<Prp name="object left" type="I" value="596"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="447"/>
+					<Prp name="datetime" type="D" value="45247.5627031597"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="10"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxStreet&quot;]"/>
+					<Prp name="object bottom" type="I" value="468"/>
+					<Prp name="image file name" type="S" value="visImage16.png"/>
+				</Node>
+			</Node>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="The text 'Highway' was entered in the text editor."/>
+			<Prp name="line no" type="I" value="10"/>
+			<Prp name="date" type="D" value="45247.7918717014"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="id" type="I" value="17"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxStreet&quot;]&#xA;(Sys[&quot;Browser&quot;](&quot;edge&quot;)[&quot;Page&quot;](&quot;http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Process.aspx&quot;)[&quot;Form&quot;](&quot;aspnetForm&quot;)[&quot;Table&quot;](0)[&quot;Cell&quot;](0, 1)[&quot;Panel&quot;](1)[&quot;Table&quot;](&quot;fmwOrder&quot;)[&quot;Cell&quot;](0, 0)[&quot;Textbox&quot;](&quot;TextBox2&quot;))"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 6">
+			<Node name="visualizer">
+				<Node name="original">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="642"/>
+					<Prp name="object left" type="I" value="596"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="296"/>
+					<Prp name="datetime" type="D" value="45247.555775463"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="7"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxPricePerUnit&quot;]"/>
+					<Prp name="object bottom" type="I" value="317"/>
+					<Prp name="image file name" type="S" value="tcvi1560777031237447.png"/>
+				</Node>
+				<Node name="diff">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="-1"/>
+					<Prp name="object left" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="-1"/>
+					<Prp name="datetime" type="D" value="0"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="7"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value=""/>
+					<Prp name="object bottom" type="I" value="-1"/>
+					<Prp name="image file name" type="S" value="visImage5_Dif.png"/>
+				</Node>
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="642"/>
+					<Prp name="object left" type="I" value="596"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="296"/>
+					<Prp name="datetime" type="D" value="45247.5626057639"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="7"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxPricePerUnit&quot;]"/>
+					<Prp name="object bottom" type="I" value="317"/>
+					<Prp name="image file name" type="S" value="visImage5.png"/>
+				</Node>
+			</Node>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="The text '43' was entered in the text editor."/>
+			<Prp name="line no" type="I" value="7"/>
+			<Prp name="date" type="D" value="45247.7917737153"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="id" type="I" value="6"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxPricePerUnit&quot;]&#xA;(Sys[&quot;Browser&quot;](&quot;edge&quot;)[&quot;Page&quot;](&quot;http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Process.aspx&quot;)[&quot;Form&quot;](&quot;aspnetForm&quot;)[&quot;Table&quot;](0)[&quot;Cell&quot;](0, 1)[&quot;Panel&quot;](1)[&quot;Table&quot;](&quot;fmwOrder&quot;)[&quot;Cell&quot;](0, 0)[&quot;Textbox&quot;](&quot;txtUnitPrice&quot;))"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="units">
+			<Prp name="unit 0" type="S" value="{AE2FF1A3-F720-49ED-BE16-AF4785D7495F}"/>
+		</Node>
+		<Node name="message 9">
+			<Node name="visualizer">
+				<Node name="original">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="642"/>
+					<Prp name="object left" type="I" value="596"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="271"/>
+					<Prp name="datetime" type="D" value="45247.5557060185"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="6"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxQuantity&quot;]"/>
+					<Prp name="object bottom" type="I" value="292"/>
+					<Prp name="image file name" type="S" value="tcvi15607722961472441.png"/>
+				</Node>
+				<Node name="diff">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="-1"/>
+					<Prp name="object left" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="-1"/>
+					<Prp name="datetime" type="D" value="0"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="6"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value=""/>
+					<Prp name="object bottom" type="I" value="-1"/>
+					<Prp name="image file name" type="S" value="visImage8_Dif.png"/>
+				</Node>
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="642"/>
+					<Prp name="object left" type="I" value="596"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="271"/>
+					<Prp name="datetime" type="D" value="45247.5626480671"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="6"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxQuantity&quot;]"/>
+					<Prp name="object bottom" type="I" value="292"/>
+					<Prp name="image file name" type="S" value="visImage8.png"/>
+				</Node>
+			</Node>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="The text '20' was entered in the text editor."/>
+			<Prp name="line no" type="I" value="6"/>
+			<Prp name="date" type="D" value="45247.7918163426"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="id" type="I" value="9"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxQuantity&quot;]&#xA;(Sys[&quot;Browser&quot;](&quot;edge&quot;)[&quot;Page&quot;](&quot;http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Process.aspx&quot;)[&quot;Form&quot;](&quot;aspnetForm&quot;)[&quot;Table&quot;](0)[&quot;Cell&quot;](0, 1)[&quot;Panel&quot;](1)[&quot;Table&quot;](&quot;fmwOrder&quot;)[&quot;Cell&quot;](0, 0)[&quot;Textbox&quot;](&quot;txtQuantity&quot;))"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 16">
+			<Node name="visualizer">
+				<Node name="original">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="802"/>
+					<Prp name="object left" type="I" value="596"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="422"/>
+					<Prp name="datetime" type="D" value="45247.5558680556"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="9"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxCustomerName&quot;]"/>
+					<Prp name="object bottom" type="I" value="443"/>
+					<Prp name="image file name" type="S" value="tcvi15607858282374413.png"/>
+				</Node>
+				<Node name="diff">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="-1"/>
+					<Prp name="object left" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="-1"/>
+					<Prp name="datetime" type="D" value="0"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="9"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value=""/>
+					<Prp name="object bottom" type="I" value="-1"/>
+					<Prp name="image file name" type="S" value="visImage15_Dif.png"/>
+				</Node>
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="802"/>
+					<Prp name="object left" type="I" value="596"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="422"/>
+					<Prp name="datetime" type="D" value="45247.5626989005"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="9"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxCustomerName&quot;]"/>
+					<Prp name="object bottom" type="I" value="443"/>
+					<Prp name="image file name" type="S" value="visImage15.png"/>
+				</Node>
+			</Node>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="The text 'Testing' was entered in the text editor."/>
+			<Prp name="line no" type="I" value="9"/>
+			<Prp name="date" type="D" value="45247.7918671644"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="id" type="I" value="16"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxCustomerName&quot;]&#xA;(Sys[&quot;Browser&quot;](&quot;edge&quot;)[&quot;Page&quot;](&quot;http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Process.aspx&quot;)[&quot;Form&quot;](&quot;aspnetForm&quot;)[&quot;Table&quot;](0)[&quot;Cell&quot;](0, 1)[&quot;Panel&quot;](1)[&quot;Table&quot;](&quot;fmwOrder&quot;)[&quot;Cell&quot;](0, 0)[&quot;Textbox&quot;](&quot;txtName&quot;))"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="stack"/>
+		<Node name="message 13">
+			<Node name="visualizer">
+				<Node name="original">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="642"/>
+					<Prp name="object left" type="I" value="596"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="271"/>
+					<Prp name="datetime" type="D" value="45247.5557060185"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="6"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxQuantity&quot;]"/>
+					<Prp name="object bottom" type="I" value="292"/>
+					<Prp name="image file name" type="S" value="tcvi15607722961472442.png"/>
+				</Node>
+				<Node name="diff">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="-1"/>
+					<Prp name="object left" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="-1"/>
+					<Prp name="datetime" type="D" value="0"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="6"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value=""/>
+					<Prp name="object bottom" type="I" value="-1"/>
+					<Prp name="image file name" type="S" value="visImage12_Dif.png"/>
+				</Node>
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="642"/>
+					<Prp name="object left" type="I" value="596"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="271"/>
+					<Prp name="datetime" type="D" value="45247.5626894792"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="6"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxQuantity&quot;]"/>
+					<Prp name="object bottom" type="I" value="292"/>
+					<Prp name="image file name" type="S" value="visImage12.png"/>
+				</Node>
+			</Node>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="The text '40' was entered in the text editor."/>
+			<Prp name="line no" type="I" value="6"/>
+			<Prp name="date" type="D" value="45247.7918578009"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="id" type="I" value="13"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxQuantity&quot;]&#xA;(Sys[&quot;Browser&quot;](&quot;edge&quot;)[&quot;Page&quot;](&quot;http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Process.aspx&quot;)[&quot;Form&quot;](&quot;aspnetForm&quot;)[&quot;Table&quot;](0)[&quot;Cell&quot;](0, 1)[&quot;Panel&quot;](1)[&quot;Table&quot;](&quot;fmwOrder&quot;)[&quot;Cell&quot;](0, 0)[&quot;Textbox&quot;](&quot;txtQuantity&quot;))"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 7">
+			<Node name="visualizer">
+				<Node name="original">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="642"/>
+					<Prp name="object left" type="I" value="596"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="321"/>
+					<Prp name="datetime" type="D" value="45247.5557986111"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="8"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxDiscount&quot;]"/>
+					<Prp name="object bottom" type="I" value="342"/>
+					<Prp name="image file name" type="S" value="tcvi1560780031237449.png"/>
+				</Node>
+				<Node name="diff">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="-1"/>
+					<Prp name="object left" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="-1"/>
+					<Prp name="datetime" type="D" value="0"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="8"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value=""/>
+					<Prp name="object bottom" type="I" value="-1"/>
+					<Prp name="image file name" type="S" value="visImage6_Dif.png"/>
+				</Node>
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="642"/>
+					<Prp name="object left" type="I" value="596"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="321"/>
+					<Prp name="datetime" type="D" value="45247.5626104167"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="8"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxDiscount&quot;]"/>
+					<Prp name="object bottom" type="I" value="342"/>
+					<Prp name="image file name" type="S" value="visImage6.png"/>
+				</Node>
+			</Node>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="The text '10' was entered in the text editor."/>
+			<Prp name="line no" type="I" value="8"/>
+			<Prp name="date" type="D" value="45247.7917787037"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="id" type="I" value="7"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxDiscount&quot;]&#xA;(Sys[&quot;Browser&quot;](&quot;edge&quot;)[&quot;Page&quot;](&quot;http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Process.aspx&quot;)[&quot;Form&quot;](&quot;aspnetForm&quot;)[&quot;Table&quot;](0)[&quot;Cell&quot;](0, 1)[&quot;Panel&quot;](1)[&quot;Table&quot;](&quot;fmwOrder&quot;)[&quot;Cell&quot;](0, 0)[&quot;Textbox&quot;](&quot;txtDiscount&quot;))"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 1">
+			<Node name="visualizer">
+				<Node name="original">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="696"/>
+					<Prp name="object left" type="I" value="596"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="686"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="246"/>
+					<Prp name="datetime" type="D" value="45247.5556365741"/>
+					<Prp name="click point y" type="I" value="258"/>
+					<Prp name="line #" type="I" value="1"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;selectProduct&quot;]"/>
+					<Prp name="object bottom" type="I" value="265"/>
+					<Prp name="image file name" type="S" value="tcvi1560766312237440.png"/>
+				</Node>
+				<Node name="diff">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="-1"/>
+					<Prp name="object left" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="-1"/>
+					<Prp name="datetime" type="D" value="0"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="1"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value=""/>
+					<Prp name="object bottom" type="I" value="-1"/>
+					<Prp name="image file name" type="S" value="visImage0_Dif.png"/>
+				</Node>
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="696"/>
+					<Prp name="object left" type="I" value="596"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="686"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="246"/>
+					<Prp name="datetime" type="D" value="45247.5625616782"/>
+					<Prp name="click point y" type="I" value="258"/>
+					<Prp name="line #" type="I" value="1"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;selectProduct&quot;]"/>
+					<Prp name="object bottom" type="I" value="265"/>
+					<Prp name="image file name" type="S" value="visImage0.png"/>
+				</Node>
+			</Node>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="line no" type="I" value="1"/>
+			<Prp name="date" type="D" value="45247.7917306829"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="A click at point (90, 12) with no key pressed.&#xA;&#xA;Tested object:&#xA;Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;selectProduct&quot;]&#xA;(Sys[&quot;Browser&quot;](&quot;edge&quot;)[&quot;Page&quot;](&quot;http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Process.aspx&quot;)[&quot;Form&quot;](&quot;aspnetForm&quot;)[&quot;Table&quot;](0)[&quot;Cell&quot;](0, 1)[&quot;Panel&quot;](1)[&quot;Table&quot;](&quot;fmwOrder&quot;)[&quot;Cell&quot;](0, 0)[&quot;Select&quot;](&quot;ddlProduct&quot;))"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 11">
+			<Node name="visualizer">
+				<Node name="original">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="642"/>
+					<Prp name="object left" type="I" value="596"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="321"/>
+					<Prp name="datetime" type="D" value="45247.5557986111"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="8"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxDiscount&quot;]"/>
+					<Prp name="object bottom" type="I" value="342"/>
+					<Prp name="image file name" type="S" value="tcvi15607800312374491.png"/>
+				</Node>
+				<Node name="diff">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="-1"/>
+					<Prp name="object left" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="-1"/>
+					<Prp name="datetime" type="D" value="0"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="8"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value=""/>
+					<Prp name="object bottom" type="I" value="-1"/>
+					<Prp name="image file name" type="S" value="visImage10_Dif.png"/>
+				</Node>
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="642"/>
+					<Prp name="object left" type="I" value="596"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="321"/>
+					<Prp name="datetime" type="D" value="45247.5626531134"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="8"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxDiscount&quot;]"/>
+					<Prp name="object bottom" type="I" value="342"/>
+					<Prp name="image file name" type="S" value="visImage10.png"/>
+				</Node>
+			</Node>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="The text '15' was entered in the text editor."/>
+			<Prp name="line no" type="I" value="8"/>
+			<Prp name="date" type="D" value="45247.7918214468"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="id" type="I" value="11"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxDiscount&quot;]&#xA;(Sys[&quot;Browser&quot;](&quot;edge&quot;)[&quot;Page&quot;](&quot;http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Process.aspx&quot;)[&quot;Form&quot;](&quot;aspnetForm&quot;)[&quot;Table&quot;](0)[&quot;Cell&quot;](0, 1)[&quot;Panel&quot;](1)[&quot;Table&quot;](&quot;fmwOrder&quot;)[&quot;Cell&quot;](0, 0)[&quot;Textbox&quot;](&quot;txtDiscount&quot;))"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 20">
+			<Node name="visualizer">
+				<Node name="original">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="802"/>
+					<Prp name="object left" type="I" value="596"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="472"/>
+					<Prp name="datetime" type="D" value="45247.5559722222"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="13"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxCity&quot;]"/>
+					<Prp name="object bottom" type="I" value="496"/>
+					<Prp name="image file name" type="S" value="tcvi15607943122374418.png"/>
+				</Node>
+				<Node name="diff">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="-1"/>
+					<Prp name="object left" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="-1"/>
+					<Prp name="datetime" type="D" value="0"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="13"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value=""/>
+					<Prp name="object bottom" type="I" value="-1"/>
+					<Prp name="image file name" type="S" value="visImage19_Dif.png"/>
+				</Node>
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="802"/>
+					<Prp name="object left" type="I" value="596"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="472"/>
+					<Prp name="datetime" type="D" value="45247.5627124653"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="13"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxCity&quot;]"/>
+					<Prp name="object bottom" type="I" value="493"/>
+					<Prp name="image file name" type="S" value="visImage19.png"/>
+				</Node>
+			</Node>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="The text 'Pune' was entered in the text editor."/>
+			<Prp name="line no" type="I" value="13"/>
+			<Prp name="date" type="D" value="45247.7918801389"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="id" type="I" value="20"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxCity&quot;]&#xA;(Sys[&quot;Browser&quot;](&quot;edge&quot;)[&quot;Page&quot;](&quot;http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Process.aspx&quot;)[&quot;Form&quot;](&quot;aspnetForm&quot;)[&quot;Table&quot;](0)[&quot;Cell&quot;](0, 1)[&quot;Panel&quot;](1)[&quot;Table&quot;](&quot;fmwOrder&quot;)[&quot;Cell&quot;](0, 0)[&quot;Textbox&quot;](&quot;TextBox3&quot;))"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 5">
+			<Node name="visualizer">
+				<Node name="original">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="642"/>
+					<Prp name="object left" type="I" value="596"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="271"/>
+					<Prp name="datetime" type="D" value="45247.5557060185"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="6"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxQuantity&quot;]"/>
+					<Prp name="object bottom" type="I" value="292"/>
+					<Prp name="image file name" type="S" value="tcvi1560772296147244.png"/>
+				</Node>
+				<Node name="diff">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="-1"/>
+					<Prp name="object left" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="-1"/>
+					<Prp name="datetime" type="D" value="0"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="6"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value=""/>
+					<Prp name="object bottom" type="I" value="-1"/>
+					<Prp name="image file name" type="S" value="visImage4_Dif.png"/>
+				</Node>
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="642"/>
+					<Prp name="object left" type="I" value="596"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="271"/>
+					<Prp name="datetime" type="D" value="45247.5625998148"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="6"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxQuantity&quot;]"/>
+					<Prp name="object bottom" type="I" value="292"/>
+					<Prp name="image file name" type="S" value="visImage4.png"/>
+				</Node>
+			</Node>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="The text '10' was entered in the text editor."/>
+			<Prp name="line no" type="I" value="6"/>
+			<Prp name="date" type="D" value="45247.7917687037"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="id" type="I" value="5"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;textboxQuantity&quot;]&#xA;(Sys[&quot;Browser&quot;](&quot;edge&quot;)[&quot;Page&quot;](&quot;http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Process.aspx&quot;)[&quot;Form&quot;](&quot;aspnetForm&quot;)[&quot;Table&quot;](0)[&quot;Cell&quot;](0, 1)[&quot;Panel&quot;](1)[&quot;Table&quot;](&quot;fmwOrder&quot;)[&quot;Cell&quot;](0, 0)[&quot;Textbox&quot;](&quot;txtQuantity&quot;))"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 3">
+			<Node name="visualizer">
+				<Node name="original">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="100"/>
+					<Prp name="object left" type="I" value="0"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="62"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="0"/>
+					<Prp name="datetime" type="D" value="45247.5556597222"/>
+					<Prp name="click point y" type="I" value="19"/>
+					<Prp name="line #" type="I" value="3"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;wndChrome_WidgetWin_1&quot;][&quot;Chrome_RenderWidgetHostHWND&quot;]"/>
+					<Prp name="object bottom" type="I" value="52"/>
+					<Prp name="image file name" type="S" value="tcvi1560768296237441.png"/>
+				</Node>
+				<Node name="diff">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="-1"/>
+					<Prp name="object left" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="-1"/>
+					<Prp name="datetime" type="D" value="0"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="3"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value=""/>
+					<Prp name="object bottom" type="I" value="-1"/>
+					<Prp name="image file name" type="S" value="visImage2_Dif.png"/>
+				</Node>
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="1876"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="66"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="70"/>
+					<Prp name="datetime" type="D" value="45247.5625736574"/>
+					<Prp name="click point y" type="I" value="89"/>
+					<Prp name="line #" type="I" value="3"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;wndChrome_WidgetWin_1&quot;][&quot;Chrome_RenderWidgetHostHWND&quot;]"/>
+					<Prp name="object bottom" type="I" value="1028"/>
+					<Prp name="image file name" type="S" value="visImage2.png"/>
+				</Node>
+			</Node>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="line no" type="I" value="3"/>
+			<Prp name="date" type="D" value="45247.7917414005"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="id" type="I" value="3"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="A click at point (62, 19) with no key pressed.&#xA;&#xA;Tested object:&#xA;Aliases[&quot;browser&quot;][&quot;wndChrome_WidgetWin_1&quot;][&quot;Chrome_RenderWidgetHostHWND&quot;]&#xA;(Sys[&quot;Browser&quot;](&quot;edge&quot;)[&quot;BrowserWindow&quot;](0)[&quot;Window&quot;](&quot;Chrome_RenderWidgetHostHWND&quot;, &quot;Chrome Legacy Window&quot;, 1))"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 12">
+			<Node name="visualizer">
+				<Node name="original">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="100"/>
+					<Prp name="object left" type="I" value="0"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="62"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="0"/>
+					<Prp name="datetime" type="D" value="45247.5556597222"/>
+					<Prp name="click point y" type="I" value="19"/>
+					<Prp name="line #" type="I" value="5"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;selectProduct&quot;]"/>
+					<Prp name="object bottom" type="I" value="52"/>
+					<Prp name="image file name" type="S" value="tcvi15607683121472412.png"/>
+				</Node>
+				<Node name="diff">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="-1"/>
+					<Prp name="object left" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="-1"/>
+					<Prp name="datetime" type="D" value="0"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="5"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value=""/>
+					<Prp name="object bottom" type="I" value="-1"/>
+					<Prp name="image file name" type="S" value="visImage11_Dif.png"/>
+				</Node>
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="696"/>
+					<Prp name="object left" type="I" value="596"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="646"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="246"/>
+					<Prp name="datetime" type="D" value="45247.5626607986"/>
+					<Prp name="click point y" type="I" value="255"/>
+					<Prp name="line #" type="I" value="5"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;selectProduct&quot;]"/>
+					<Prp name="object bottom" type="I" value="265"/>
+					<Prp name="image file name" type="S" value="visImage11.png"/>
+				</Node>
+			</Node>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="The combo box item 'ScreenSaver' was selected."/>
+			<Prp name="line no" type="I" value="5"/>
+			<Prp name="date" type="D" value="45247.7918552083"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="id" type="I" value="12"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Aliases[&quot;browser&quot;][&quot;pageWebOrders&quot;][&quot;formAspnetform&quot;][&quot;selectProduct&quot;]&#xA;(Sys[&quot;Browser&quot;](&quot;edge&quot;)[&quot;Page&quot;](&quot;http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Process.aspx&quot;)[&quot;Form&quot;](&quot;aspnetForm&quot;)[&quot;Table&quot;](0)[&quot;Cell&quot;](0, 1)[&quot;Panel&quot;](1)[&quot;Table&quot;](&quot;fmwOrder&quot;)[&quot;Cell&quot;](0, 0)[&quot;Select&quot;](&quot;ddlProduct&quot;))"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Prp name="status" type="I" value="0"/>
+	</Node>
+</Nodes>

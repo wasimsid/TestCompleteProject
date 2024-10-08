@@ -1,0 +1,19 @@
+﻿function retrievedata (){
+  
+
+ var driver = DDT["ExcelDriver"]("C:\\Users\\subhashr\\Documents\\Personal Document\\TestCompleteTraining\\Training\Book1.xlsx","Sheet1");
+ 
+ 
+ 
+  while(!driver["EOF"]()){
+  
+  Log["Message"](DDT["CurrentDriver"]["Value"](0));
+
+   
+    DDT["CurrentDriver"]["Next"]();
+ 
+ }
+
+
+
+}

@@ -1,0 +1,99 @@
+﻿function retrievedata (){
+  
+
+ var driver = DDT["ExcelDriver"]("C:\\Users\\subhashr\\Documents\\Uline Document\\Uline Document\\Defect Details.xlsx", "Sheet1");
+ 
+ while(!driver["EOF"]()){
+   
+ var value = DDT["CurrentDriver"]["Value"]("Defect Raised Date")
+ 
+ Log["Message"](value)
+ break;
+ 
+
+ 
+// driver["Next"]();
+ 
+ }
+
+}
+
+function excel(){
+
+  var driver = DDT["ExcelDriver"]("C:\\Users\\subhashr\\Documents\\Uline Document\\Uline Document\\Defect Details.xlsx", "Sheet1");
+//  var count = DDT["CurrentDriver"]["ColumnCount"];
+//
+////    for (var i = 0; i < count; i++)
+////    {
+////         
+////      var column = DDT["CurrentDriver"]["ColumnName"](i);
+////      
+////      Log["Message"](column)
+////     
+////    break;
+////    
+////    }
+//
+    var column = DDT["CurrentDriver"]["ColumnName"]();
+    Log["Message"](column)
+//
+//    var value = DDT["CurrentDriver"]["Value"]("Status");
+//  //  Log["Message"](value)
+
+    
+    
+    for (var i = 0; i<column ; i++){
+      
+    var val = DDT["CurrentDriver"]["ColumnName"](i)
+    Log["Message"](val)
+      
+    
+    
+    
+    }
+}
+
+
+function abc (){
+  
+    var driver = DDT["ExcelDriver"]("C:\\Users\\subhashr\\Documents\\Uline Document\\Uline Document\\Defect Details.xlsx", "Sheet1");
+
+    for(i = 0; i < DDT["CurrentDriver"]["ColumnCount"]; i++){
+      
+    for (j = 0; j< DDT["CurrentDriver"]["Value"](6); j++){
+      
+    Log.Message(DDT["CurrentDriver"]["ColumnName"](i) + ": " + aqConvert.VarToStr(DDT["CurrentDriver"]["Value"](i)));
+
+    }
+}
+
+
+}
+
+
+
+function test (){
+  
+
+var RecNo;
+
+function ProcessData()
+{
+  var Fldr, i;
+  var driver = DDT["ExcelDriver"]("C:\\Users\\subhashr\\Documents\\Uline Document\\Uline Document\\Defect Details.xlsx", "Sheet1");
+  
+  Fldr = Log["CreateFolder"]("Record: " + aqConvert.VarToStr(RecNo));
+  Log["PushLogFolder"](Fldr);
+  
+  for(i = 0; i < DDT["CurrentDriver"]["ColumnCount"]; i++)
+    Log.Message(DDT["CurrentDriver"]["ColumnName"](i) + ": " + aqConvert.VarToStr(DDT["CurrentDriver"]["Value"](i)));
+  
+  Log["PopLogFolder"]();
+  RecNo = RecNo + 1;
+
+}
+
+
+
+
+}

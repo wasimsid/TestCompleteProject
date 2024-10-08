@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{9576DAFD-0ADD-41A8-9897-C72F150AF6BB}" version="15.0">
+	<children>
+		<child name="Test1" key="{A18D999E-17D7-40CA-9CB5-C3678591F28F}" path="Test1.tcKDTest" />
+		<child name="Test2" key="{C78E58AA-B0C8-4663-8D29-A90CDC6181B9}" path="Test2.tcKDTest" />
+		<child name="Test3" key="{D8F2BE17-9391-40E9-AC7D-810424260563}" path="Test3.tcKDTest" />
+		<child name="Test4" key="{591A70FF-2D90-4C3F-83A8-ECAF6B2AF63E}" path="Test4.tcKDTest" />
+		<child name="Test5" key="{F0B075D7-8792-4FD6-9DD2-4F57BFC0B0AA}" path="Test5.tcKDTest" />
+		<child name="Test6" key="{AE2FF1A3-F720-49ED-BE16-AF4785D7495F}" path="Test6.tcKDTest" />
+		<child name="LoginToWebOrderPage" key="{A35A3138-24EA-4920-82F7-D27F623624AF}" path="LoginToWebOrderPage.tcKDTest" />
+		<child name="Test7" key="{9604F54E-E6B7-46BC-88BB-ADB680FC73FB}" path="Test7.tcKDTest" />
+		<child name="enterProductInfo" key="{633EFD16-1C0E-4F2F-B1CC-F4F725E53D49}" path="enterProductInfo.tcKDTest" />
+	</children>
+</Root>

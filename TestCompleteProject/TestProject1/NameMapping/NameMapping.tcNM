@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root Signature="{5DCBAC3B-D39C-497C-9BE8-744CBADD37AA}" NameMappingVersion="7" SaveImages="0">
+	<Storages Current="0">
+		<Child Name="Default Configuration" />
+	</Storages>
+	<Nodes Name="NameMapping" Key="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}">
+		<Children>
+			<Child Name="Sys" Key="{DDC7E6E1-E548-4C44-A0C2-03129CF18F3F}">
+				<Properties>
+					<Property Name="Name">
+						<Value Value="Sys" />
+					</Property>
+				</Properties>
+				<Children>
+					<Child Name="browser" Key="{635E4D13-FBA5-41C1-A6BC-6C6AD7AB2249}">
+						<Properties>
+							<Property Name="ObjectType">
+								<Value Value="Browser" />
+							</Property>
+						</Properties>
+						<Children>
+							<Child Name="pageWebOrders" Key="{98CC9191-2F18-400B-A372-EFC50CDED6CB}">
+								<Image FileName="-376969027" Left="4" Top="70" Right="1876" Bottom="1028" />
+								<Properties>
+									<Property Name="ObjectType">
+										<Value Value="Page" />
+									</Property>
+									<Property Name="URL">
+										<Value Value="http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Process.aspx" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="formAspnetform" Key="{E3654ECD-4A15-4244-998D-2675D4E5FB20}" ExtendedFind="True">
+										<Image FileName="-376969027" Left="4" Top="70" Right="1876" Bottom="727" />
+										<Properties>
+											<Property Name="ObjectType">
+												<Value Value="Form" />
+											</Property>
+											<Property Name="idStr">
+												<Value Value="aspnetForm" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="selectProduct" Key="{B49C8179-7869-4348-8B5F-42829F116046}" ExtendedFind="True">
+												<Image FileName="-376969027" Left="596" Top="246" Right="696" Bottom="265" />
+												<TypeInfo Item0="{5DA38D12-0445-4A7D-A237-CD5B8A396DA7}" />
+												<Properties>
+													<Property Name="ObjectType">
+														<Value Value="Select" />
+													</Property>
+													<Property Name="ObjectIdentifier">
+														<Value Value="ddlProduct" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="textboxQuantity" Key="{E36DA8D6-B388-4888-BD83-8A08597996A0}" ExtendedFind="True">
+												<Image FileName="-2127653401" Left="596" Top="271" Right="642" Bottom="292" />
+												<TypeInfo Item0="{DEFFAC9A-37C6-423E-B490-3B576AF392E8}" />
+												<Properties>
+													<Property Name="ObjectType">
+														<Value Value="Textbox" />
+													</Property>
+													<Property Name="ObjectIdentifier">
+														<Value Value="txtQuantity" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="textboxDiscount" Key="{12170A15-EA8D-4DDC-AFA1-E34F0949AEAA}" ExtendedFind="True">
+												<Image FileName="-1393079533" Left="596" Top="321" Right="642" Bottom="342" />
+												<TypeInfo Item0="{DEFFAC9A-37C6-423E-B490-3B576AF392E8}" />
+												<Properties>
+													<Property Name="ObjectType">
+														<Value Value="Textbox" />
+													</Property>
+													<Property Name="ObjectIdentifier">
+														<Value Value="txtDiscount" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="textboxPricePerUnit" Key="{E6F0267B-B535-4D05-A52D-9CF8C963C893}" ExtendedFind="True">
+												<Image FileName="521078598" Left="596" Top="296" Right="642" Bottom="317" />
+												<TypeInfo Item0="{DEFFAC9A-37C6-423E-B490-3B576AF392E8}" />
+												<Properties>
+													<Property Name="ObjectType">
+														<Value Value="Textbox" />
+													</Property>
+													<Property Name="ObjectIdentifier">
+														<Value Value="txtUnitPrice" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="submitbuttonCalculate" Key="{0A65F683-A689-4993-9ACE-632AF7E3A297}" ExtendedFind="True">
+												<Image FileName="1073999700" Left="646" Top="344" Right="729" Bottom="371" />
+												<TypeInfo Item0="{11AB3CCE-AECA-4645-AC57-0DEEE7CC56F0}" />
+												<Properties>
+													<Property Name="ObjectType">
+														<Value Value="SubmitButton" />
+													</Property>
+													<Property Name="ObjectIdentifier">
+														<Value Value="Calculate" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="textboxCustomerName" Key="{0A3D5AB4-B186-4297-A483-C43F4D1A191A}" ExtendedFind="True">
+												<Image FileName="921398429" Left="596" Top="422" Right="802" Bottom="443" />
+												<TypeInfo Item0="{DEFFAC9A-37C6-423E-B490-3B576AF392E8}" />
+												<Properties>
+													<Property Name="ObjectType">
+														<Value Value="Textbox" />
+													</Property>
+													<Property Name="ObjectIdentifier">
+														<Value Value="txtName" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="textboxStreet" Key="{7975CB13-E2A4-4AE7-8D30-024BCAF909FE}" ExtendedFind="True">
+												<Image FileName="617656791" Left="596" Top="447" Right="802" Bottom="468" />
+												<TypeInfo Item0="{DEFFAC9A-37C6-423E-B490-3B576AF392E8}" />
+												<Properties>
+													<Property Name="ObjectType">
+														<Value Value="Textbox" />
+													</Property>
+													<Property Name="ObjectIdentifier">
+														<Value Value="TextBox2" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="textboxCity" Key="{A36E4599-D370-459A-81BE-D8741B9A2A7D}" ExtendedFind="True">
+												<Image FileName="1305043762" Left="596" Top="472" Right="802" Bottom="493" />
+												<TypeInfo Item0="{DEFFAC9A-37C6-423E-B490-3B576AF392E8}" />
+												<Properties>
+													<Property Name="ObjectType">
+														<Value Value="Textbox" />
+													</Property>
+													<Property Name="ObjectIdentifier">
+														<Value Value="TextBox3" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="textboxState" Key="{73F34708-A17A-47FA-857F-CB397A908BAF}" ExtendedFind="True">
+												<Image FileName="1481580107" Left="596" Top="497" Right="802" Bottom="518" />
+												<TypeInfo Item0="{DEFFAC9A-37C6-423E-B490-3B576AF392E8}" />
+												<Properties>
+													<Property Name="ObjectType">
+														<Value Value="Textbox" />
+													</Property>
+													<Property Name="ObjectIdentifier">
+														<Value Value="TextBox4" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="labelZip" Key="{298F4982-25D2-4C34-9482-30BF84A83991}" ExtendedFind="True">
+												<Image FileName="-2079492714" Left="446" Top="521" Right="596" Bottom="540" />
+												<TypeInfo Item0="{482EBE3D-808D-4468-A514-696B52CE8F95}" />
+												<Properties>
+													<Property Name="ObjectType">
+														<Value Value="Label" />
+													</Property>
+													<Property Name="contentText">
+														<Value Value="5A00690070003A000A002A00" Type="7" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="textboxZip" Key="{7AF1C1F0-117A-4301-A3AE-1A500B0173C2}" ExtendedFind="True">
+												<Image FileName="-1317519599" Left="596" Top="525" Right="802" Bottom="546" />
+												<TypeInfo Item0="{DEFFAC9A-37C6-423E-B490-3B576AF392E8}" />
+												<Properties>
+													<Property Name="ObjectType">
+														<Value Value="Textbox" />
+													</Property>
+													<Property Name="ObjectIdentifier">
+														<Value Value="TextBox5" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="linkOrder" Key="{1277354C-E2B1-4EF0-B9AF-24A1E7755552}" ExtendedFind="True">
+												<Image FileName="-1485066764" Left="66" Top="433" Right="421" Bottom="495" />
+												<TypeInfo Item0="{482EBE3D-808D-4468-A514-696B52CE8F95}" />
+												<Properties>
+													<Property Name="ObjectType">
+														<Value Value="Link" />
+													</Property>
+													<Property Name="contentText">
+														<Value Value="Order" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="textboxTotal" Key="{7B57DA42-B169-42F3-8C61-A5639C8AE803}" ExtendedFind="True">
+												<Image FileName="-2131896440" Left="691" Top="521" Right="759" Bottom="552" />
+												<TypeInfo Item0="{DEFFAC9A-37C6-423E-B490-3B576AF392E8}" />
+												<Properties>
+													<Property Name="ObjectType">
+														<Value Value="Textbox" />
+													</Property>
+													<Property Name="ObjectIdentifier">
+														<Value Value="txtTotal" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="textnodeAddressInformation" Key="{831CB84F-EF1A-4523-867F-D8DADFD6CCDC}" ExtendedFind="True">
+												<Image FileName="1673432966" Left="466" Top="588" Right="1876" Bottom="631" />
+												<TypeInfo Item0="{482EBE3D-808D-4468-A514-696B52CE8F95}" />
+												<Properties>
+													<Property Name="ObjectType">
+														<Value Value="TextNode" />
+													</Property>
+													<Property Name="contentText">
+														<Value Value="Address Information" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="tableFmworder" Key="{EB4B109C-270F-4923-B134-0031FC9BA8A9}" ExtendedFind="True">
+												<Image FileName="-605321888" Left="466" Top="311" Right="1876" Bottom="1114" />
+												<Properties>
+													<Property Name="ObjectType">
+														<Value Value="Table" />
+													</Property>
+													<Property Name="ObjectIdentifier">
+														<Value Value="fmwOrder" />
+													</Property>
+												</Properties>
+												<Children>
+													<Child Name="cell" Key="{82A3191E-37BA-4069-B219-35962855E517}">
+														<Image FileName="-605321888" Left="466" Top="311" Right="1876" Bottom="1114" />
+														<TypeInfo Item0="{482EBE3D-808D-4468-A514-696B52CE8F95}" />
+														<Properties>
+															<Property Name="ObjectType">
+																<Value Value="Cell" />
+															</Property>
+															<Property Name="RowIndex">
+																<Value Value="0" Type="0" />
+															</Property>
+															<Property Name="ColumnIndex">
+																<Value Value="0" Type="0" />
+															</Property>
+														</Properties>
+														<Children>
+															<Child Name="radiobuttonVisa" Key="{BEEB8158-C377-437D-A6BF-D691E1B45132}" ExtendedFind="True">
+																<Image FileName="-2091150246" Left="703" Top="898" Right="723" Bottom="918" />
+																<TypeInfo Item0="{B1E346A4-5117-4EB1-8B97-FCAA87D6AF08}" />
+																<Properties>
+																	<Property Name="ObjectType">
+																		<Value Value="RadioButton" />
+																	</Property>
+																	<Property Name="ObjectIdentifier">
+																		<Value Value="cardList_0" />
+																	</Property>
+																</Properties>
+															</Child>
+															<Child Name="textboxCardNr" Key="{4EC7BEED-9E7E-4CFD-9E07-469F60B551EA}" ExtendedFind="True">
+																<Image FileName="1687462567" Left="691" Top="931" Right="999" Bottom="962" />
+																<TypeInfo Item0="{DEFFAC9A-37C6-423E-B490-3B576AF392E8}" />
+																<Properties>
+																	<Property Name="ObjectType">
+																		<Value Value="Textbox" />
+																	</Property>
+																	<Property Name="ObjectIdentifier">
+																		<Value Value="TextBox6" />
+																	</Property>
+																</Properties>
+															</Child>
+															<Child Name="textboxExpireDateMmYy" Key="{04745F75-101E-4A15-8057-ABFFB0BF5F9B}" ExtendedFind="True">
+																<Image FileName="-1264747520" Left="691" Top="968" Right="759" Bottom="999" />
+																<TypeInfo Item0="{DEFFAC9A-37C6-423E-B490-3B576AF392E8}" />
+																<Properties>
+																	<Property Name="ObjectType">
+																		<Value Value="Textbox" />
+																	</Property>
+																	<Property Name="ObjectIdentifier">
+																		<Value Value="TextBox1" />
+																	</Property>
+																</Properties>
+															</Child>
+															<Child Name="linkProcess" Key="{352DFCDA-657E-4EBD-BF65-798B58B2FB24}" ExtendedFind="True">
+																<Image FileName="1925654487" Left="691" Top="929" Right="891" Bottom="977" />
+																<TypeInfo Item0="{482EBE3D-808D-4468-A514-696B52CE8F95}" />
+																<Properties>
+																	<Property Name="ObjectType">
+																		<Value Value="Link" />
+																	</Property>
+																	<Property Name="contentText">
+																		<Value Value="Process" />
+																	</Property>
+																</Properties>
+															</Child>
+														</Children>
+													</Child>
+												</Children>
+											</Child>
+										</Children>
+									</Child>
+								</Children>
+							</Child>
+							<Child Name="wndChrome_WidgetWin_1" Key="{4E530C9E-B147-4602-A3CA-6079A0C8986B}">
+								<Image FileName="-1502629323" Left="0" Top="0" Right="100" Bottom="52" />
+								<Properties>
+									<Property Name="WndClass">
+										<Value Value="Chrome_WidgetWin_1" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="Chrome_RenderWidgetHostHWND" Key="{89E4C8B2-8C9C-4DF3-9A16-328B47603A7C}">
+										<Image FileName="-1502629323" Left="0" Top="0" Right="100" Bottom="52" />
+										<TypeInfo Item0="{E61B73C1-E694-4347-9BC5-C85AE40C844B}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="Chrome_RenderWidgetHostHWND" />
+											</Property>
+											<Property Name="WndCaption">
+												<Value Value="Chrome Legacy Window" />
+											</Property>
+										</Properties>
+									</Child>
+								</Children>
+							</Child>
+							<Child Name="pageWebOrdersLogin" Key="{00D66EF1-0353-48D3-B7C8-E69B73044357}">
+								<Image FileName="-1900864394" Left="6" Top="108" Right="1914" Bottom="1014" />
+								<Properties>
+									<Property Name="ObjectType">
+										<Value Value="Page" />
+									</Property>
+									<Property Name="URL">
+										<Value Value="http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Login.aspx*" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="formAspnetform" Key="{D7951361-3DE1-4F56-A935-F34ADF2996CE}" ExtendedFind="True">
+										<Image FileName="-1900864394" Left="6" Top="108" Right="1914" Bottom="794" />
+										<Properties>
+											<Property Name="ObjectType">
+												<Value Value="Form" />
+											</Property>
+											<Property Name="idStr">
+												<Value Value="aspnetForm" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="textboxUsername" Key="{30E19621-2818-4A7F-800E-038982ABE3A2}" ExtendedFind="True">
+												<Image FileName="-1900864394" Left="870" Top="582" Right="1091" Bottom="613" />
+												<TypeInfo Item0="{DEFFAC9A-37C6-423E-B490-3B576AF392E8}" />
+												<Properties>
+													<Property Name="ObjectType">
+														<Value Value="Textbox" />
+													</Property>
+													<Property Name="ObjectIdentifier">
+														<Value Value="username" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="passwordboxPassword" Key="{5B9295F0-BA22-4D12-8A9E-55B452F5CD97}" ExtendedFind="True">
+												<Image FileName="396789239" Left="870" Top="619" Right="1091" Bottom="650" />
+												<TypeInfo Item0="{DEFFAC9A-37C6-423E-B490-3B576AF392E8}" />
+												<Properties>
+													<Property Name="ObjectType">
+														<Value Value="PasswordBox" />
+													</Property>
+													<Property Name="ObjectIdentifier">
+														<Value Value="password" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="submitbuttonLogin" Key="{55C422D2-D0C0-4C57-BA0D-85F99F85B281}" ExtendedFind="True">
+												<Image FileName="1326869410" Left="870" Top="665" Right="995" Bottom="706" />
+												<TypeInfo Item0="{11AB3CCE-AECA-4645-AC57-0DEEE7CC56F0}" />
+												<Properties>
+													<Property Name="ObjectType">
+														<Value Value="SubmitButton" />
+													</Property>
+													<Property Name="ObjectIdentifier">
+														<Value Value="button" />
+													</Property>
+												</Properties>
+											</Child>
+										</Children>
+									</Child>
+								</Children>
+							</Child>
+						</Children>
+					</Child>
+				</Children>
+			</Child>
+		</Children>
+	</Nodes>
+	<LogicalNodes Name="Aliases" Owner="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}">
+		<Child Name="browser" Owner="{635E4D13-FBA5-41C1-A6BC-6C6AD7AB2249}">
+			<Child Name="pageWebOrders" Owner="{98CC9191-2F18-400B-A372-EFC50CDED6CB}">
+				<Child Name="formAspnetform" Owner="{E3654ECD-4A15-4244-998D-2675D4E5FB20}">
+					<Child Name="selectProduct" Owner="{B49C8179-7869-4348-8B5F-42829F116046}" />
+					<Child Name="textboxQuantity" Owner="{E36DA8D6-B388-4888-BD83-8A08597996A0}" />
+					<Child Name="textboxDiscount" Owner="{12170A15-EA8D-4DDC-AFA1-E34F0949AEAA}" />
+					<Child Name="textboxPricePerUnit" Owner="{E6F0267B-B535-4D05-A52D-9CF8C963C893}" />
+					<Child Name="submitbuttonCalculate" Owner="{0A65F683-A689-4993-9ACE-632AF7E3A297}" />
+					<Child Name="textboxCustomerName" Owner="{0A3D5AB4-B186-4297-A483-C43F4D1A191A}" />
+					<Child Name="textboxStreet" Owner="{7975CB13-E2A4-4AE7-8D30-024BCAF909FE}" />
+					<Child Name="textboxCity" Owner="{A36E4599-D370-459A-81BE-D8741B9A2A7D}" />
+					<Child Name="textboxState" Owner="{73F34708-A17A-47FA-857F-CB397A908BAF}" />
+					<Child Name="labelZip" Owner="{298F4982-25D2-4C34-9482-30BF84A83991}" />
+					<Child Name="textboxZip" Owner="{7AF1C1F0-117A-4301-A3AE-1A500B0173C2}" />
+					<Child Name="linkOrder" Owner="{1277354C-E2B1-4EF0-B9AF-24A1E7755552}" />
+					<Child Name="textboxTotal" Owner="{7B57DA42-B169-42F3-8C61-A5639C8AE803}" />
+					<Child Name="textnodeAddressInformation" Owner="{831CB84F-EF1A-4523-867F-D8DADFD6CCDC}" />
+					<Child Name="cell" Owner="{82A3191E-37BA-4069-B219-35962855E517}">
+						<Child Name="radiobuttonVisa" Owner="{BEEB8158-C377-437D-A6BF-D691E1B45132}" />
+						<Child Name="textboxCardNr" Owner="{4EC7BEED-9E7E-4CFD-9E07-469F60B551EA}" />
+						<Child Name="textboxExpireDateMmYy" Owner="{04745F75-101E-4A15-8057-ABFFB0BF5F9B}" />
+						<Child Name="linkProcess" Owner="{352DFCDA-657E-4EBD-BF65-798B58B2FB24}" />
+					</Child>
+				</Child>
+			</Child>
+			<Child Name="wndChrome_WidgetWin_1" Owner="{4E530C9E-B147-4602-A3CA-6079A0C8986B}">
+				<Child Name="Chrome_RenderWidgetHostHWND" Owner="{89E4C8B2-8C9C-4DF3-9A16-328B47603A7C}" />
+			</Child>
+			<Child Name="pageWebOrdersLogin" Owner="{00D66EF1-0353-48D3-B7C8-E69B73044357}">
+				<Child Name="formAspnetform" Owner="{D7951361-3DE1-4F56-A935-F34ADF2996CE}">
+					<Child Name="textboxUsername" Owner="{30E19621-2818-4A7F-800E-038982ABE3A2}" />
+					<Child Name="passwordboxPassword" Owner="{5B9295F0-BA22-4D12-8A9E-55B452F5CD97}" />
+					<Child Name="submitbuttonLogin" Owner="{55C422D2-D0C0-4C57-BA0D-85F99F85B281}" />
+				</Child>
+			</Child>
+		</Child>
+	</LogicalNodes>
+</Root>

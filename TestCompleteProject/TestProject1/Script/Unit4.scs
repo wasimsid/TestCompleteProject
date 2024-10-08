@@ -1,0 +1,34 @@
+﻿function Test6()
+{
+  //Opens the specified URL in a running instance of the specified browser.
+  Browsers["Item"](btEdge)["Navigate"]("http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Process.aspx");
+  //Clicks the 'selectProduct' object.
+  Aliases["browser"]["pageWebOrders"]["formAspnetform"]["selectProduct"]["Click"](90, 12);
+  //Clicks the 'selectProduct' object.
+  Aliases["browser"]["pageWebOrders"]["formAspnetform"]["selectProduct"]["Click"](90, 12);
+  //Clicks the 'Chrome_RenderWidgetHostHWND' object.
+  Aliases["browser"]["wndChrome_WidgetWin_1"]["Chrome_RenderWidgetHostHWND"]["Click"](62, 19);
+  Project["Variables"]["testing"]["Reset"]();
+  for(; !Project["Variables"]["testing"]["IsEOF"]();)
+  {
+    //Selects the KeywordTests["Test6"]["Variables"]["testing"]("Product") item of the 'selectProduct' combo box.
+    Aliases["browser"]["pageWebOrders"]["formAspnetform"]["selectProduct"]["ClickItem"](Project["Variables"]["testing"]["Value"]("Product"));
+    //Sets the text KeywordTests["Test6"]["Variables"]["testing"]("Quantity") in the 'textboxQuantity' text editor.
+    Aliases["browser"]["pageWebOrders"]["formAspnetform"]["textboxQuantity"]["SetText"](Project["Variables"]["testing"]["Value"]("Quantity"));
+    //Sets the text KeywordTests["Test6"]["Variables"]["testing"]("PricePerUnit") in the 'textboxPricePerUnit' text editor.
+    Aliases["browser"]["pageWebOrders"]["formAspnetform"]["textboxPricePerUnit"]["SetText"](Project["Variables"]["testing"]["Value"]("PricePerUnit"));
+    //Sets the text KeywordTests["Test6"]["Variables"]["testing"]("Discount") in the 'textboxDiscount' text editor.
+    Aliases["browser"]["pageWebOrders"]["formAspnetform"]["textboxDiscount"]["SetText"](Project["Variables"]["testing"]["Value"]("Discount"));
+    Project["Variables"]["testing"]["Next"]();
+  }
+  //Sets the text 'Testing' in the 'textboxCustomerName' text editor.
+  Aliases["browser"]["pageWebOrders"]["formAspnetform"]["textboxCustomerName"]["SetText"]("Testing");
+  //Sets the text 'Highway' in the 'textboxStreet' text editor.
+  Aliases["browser"]["pageWebOrders"]["formAspnetform"]["textboxStreet"]["SetText"]("Highway");
+  //Sets the text 'Highway' in the 'textboxStreet' text editor.
+  Aliases["browser"]["pageWebOrders"]["formAspnetform"]["textboxStreet"]["SetText"]("Highway");
+  //Sets the text 'Pune' in the 'textboxCity' text editor.
+  Aliases["browser"]["pageWebOrders"]["formAspnetform"]["textboxCity"]["SetText"]("Pune");
+  //Sets the text 'Pune' in the 'textboxCity' text editor.
+  Aliases["browser"]["pageWebOrders"]["formAspnetform"]["textboxCity"]["SetText"]("Pune");
+}

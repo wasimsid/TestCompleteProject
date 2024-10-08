@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="projects">
+			<Node name="project0">
+				<Node name="tests">
+					<Node name="test1">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="duration" type="I" value="0"/>
+						<Prp name="durationwithoutchildren" type="I" value="0"/>
+						<Prp name="starttime" type="D" value="45572.5474293287"/>
+						<Prp name="name" type="S" value="ProjectTestItem2"/>
+						<Prp name="status" type="I" value="3"/>
+					</Node>
+					<Node name="test0">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error0">
+								<Prp name="msg" type="S" value="Unable to connect to the data source."/>
+							</Node>
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The test execution was interrupted."/>
+							</Node>
+							<Node name="error2">
+								<Prp name="msg" type="S" value="The execution process was interrupted."/>
+							</Node>
+						</Node>
+						<Prp name="duration" type="I" value="20706"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAwADQARQBEAEYAQwBBADIALQAzADcAQgAxAC0ANAAxADkAMwAtAEIARgBFADMALQBGAEQAQwBBADgAMgBEAEIANwBBAEEAMwB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="durationwithoutchildren" type="I" value="20706"/>
+						<Prp name="starttime" type="D" value="45572.5471890278"/>
+						<Prp name="name" type="S" value="ProjectTestItem1"/>
+						<Prp name="status" type="I" value="2"/>
+					</Node>
+				</Node>
+				<Prp name="incompletedtests" type="I" value="1"/>
+				<Prp name="warningtests" type="I" value="0"/>
+				<Prp name="duration" type="I" value="20706"/>
+				<Prp name="failedtests" type="I" value="1"/>
+				<Prp name="starttime" type="D" value="45572.5471890278"/>
+				<Prp name="name" type="S" value="TestProject1"/>
+			</Node>
+		</Node>
+		<Prp name="stop" type="D" value="45572.5474309144"/>
+		<Prp name="host" type="S" value="NIBC2037"/>
+		<Prp name="warningtests" type="I" value="0"/>
+		<Prp name="name" type="S" value="TestCompleteProject"/>
+		<Prp name="user" type="S" value="shaikwasima"/>
+		<Prp name="key" type="S" value="{B7F209D4-08ED-4221-B6F4-D3B66AD96007}"/>
+		<Prp name="warningtestwithretries" type="I" value="0"/>
+		<Prp name="testname" type="S" value="TestProject1"/>
+		<Prp name="successtestwithretries" type="I" value="0"/>
+		<Prp name="tests" type="I" value="2"/>
+		<Prp name="starttime" type="D" value="45572.5471886806"/>
+		<Prp name="failedtests" type="I" value="1"/>
+		<Prp name="executionstatus" type="I" value="2"/>
+		<Prp name="incompletedtests" type="I" value="1"/>
+	</Node>
+</Nodes>

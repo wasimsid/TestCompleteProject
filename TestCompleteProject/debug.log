@@ -1,0 +1,5 @@
+[1007/105213.642:WARNING:chrome_browser_cloud_management_controller.cc(88)] Could not create policy manager as CBCM is not enabled.
+[1007/105222.636:ERROR:command_buffer_proxy_impl.cc(128)] ContextResult::kTransientFailure: Failed to send GpuControl.CreateCommandBuffer.
+[1007/105255.219:INFO:CONSOLE(1)] "[bugsnag] Loaded!", source: https://manage.smartbear.com/_next/static/chunks/pages/_app-74a961fcf7e7f235.js (1)
+[1007/105255.864:INFO:CONSOLE(1)] "Ver. : 1.78.0-56", source: https://manage.smartbear.com/_next/static/chunks/pages/_app-74a961fcf7e7f235.js (1)
+[1007/105256.502:WARNING:spdy_session.cc(3198)] Received HEADERS for invalid stream 1

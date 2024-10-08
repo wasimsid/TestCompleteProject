@@ -1,0 +1,68 @@
+﻿function weborder(){
+  
+
+  var Driver = DDT["ExcelDriver"]("C:\\Users\\subhashr\\Documents\\TestCompleteDemo.xlsx","Sheet1");
+  
+  Browsers["Item"](btEdge)["Navigate"]("http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Process.aspx");
+  var browser = Aliases["browser"];
+  var form = browser["pageWebOrders"]["formAspnetform"];
+    
+  var vselect = form["selectProduct"];
+  
+  
+  while(!Driver["EOF"]()){
+  
+  vselect["Click"](90, 7);
+  var chrome_RenderWidgetHostHWND = browser["wndChrome_WidgetWin_1"]["Chrome_RenderWidgetHostHWND"];
+  //OCR["Recognize"](chrome_RenderWidgetHostHWND)["BlockByText"](Driver["Value"](0))["Click"]();   
+  
+  var textbox = form["selectProduct"];
+  textbox["SetText"](Driver["Value"](0));
+  textbox = form["textboxQuantity"];
+  textbox["SetText"](Driver["Value"](1));
+  textbox = form["textboxPricePerUnit"];
+  textbox["SetText"](Driver["Value"](2));
+  textbox = form["textboxDiscount"];
+  textbox["SetText"](Driver["Value"](3));
+    
+  Driver["Next"]();
+  
+  }
+
+    DDT["CloseDriver"](Driver["Name"])
+
+
+}
+
+function Test1()
+{
+  Browsers["Item"](btEdge)["Navigate"]("http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Process.aspx");
+  var browser = Aliases["browser"];
+  var form = browser["pageWebOrders"]["formAspnetform"];
+  var vselect = form["selectProduct"];
+  vselect["Click"](90, 7);
+  vselect["Click"](90, 7);
+  var chrome_RenderWidgetHostHWND = browser["wndChrome_WidgetWin_1"]["Chrome_RenderWidgetHostHWND"];
+  OCR["Recognize"](chrome_RenderWidgetHostHWND)["BlockByText"]("MyMoney")["Click"]();
+  OCR["Recognize"](chrome_RenderWidgetHostHWND)["BlockByText"]("MyMoney")["Click"]();
+  var textbox = form["textboxQuantity"];
+  textbox["Click"](26, 10);
+  textbox["Click"](26, 10);
+  textbox["SetText"]("10");
+  textbox["Keys"]("[Tab]");
+  textbox["Keys"]("[Tab]");
+  textbox = form["textboxPricePerUnit"];
+  textbox["SetText"]("2");
+  textbox["SetText"]("2");
+  textbox["SetText"]("2");
+  textbox["SetText"]("20");
+  textbox["Keys"]("[Tab]");
+  textbox["Keys"]("[Tab]");
+  textbox = form["textboxDiscount"];
+  textbox["SetText"]("1");
+  textbox["SetText"]("1");
+  textbox["SetText"]("1");
+  textbox["SetText"]("18");
+  textbox["Keys"]("[Tab]");
+  textbox["Keys"]("[Tab]");
+}

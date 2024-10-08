@@ -1,0 +1,61 @@
+﻿var RecNo;
+
+function ProcessData()
+{
+  var Fldr, i;
+  
+//  Fldr = Log["CreateFolder"]("Record: " + aqConvert.VarToStr(RecNo));
+//  Log["PushLogFolder"](Fldr);
+  
+    for(i = 0; i < DDT["CurrentDriver"]["ColumnCount"]; i++)
+    Log.Message(DDT["CurrentDriver"]["ColumnName"](i) + ": " + aqConvert.VarToStr(DDT["CurrentDriver"]["Value"](i)));
+  
+//  Log["PopLogFolder"]();
+  RecNo = RecNo + 1;
+}
+  
+function TestDriver()
+{
+  var Driver;
+  var dbvalue = []
+  
+  Driver = DDT["ExcelDriver"]("C:\\Users\\subhashr\\Documents\\Uline Document\\Uline Document\\Defect Details.xlsx", "Sheet1");
+  
+
+      
+  
+  while (! Driver["EOF"]() )
+  {
+    
+  //  Log["Message"](DDT["CurrentDriver"]["Value"](5))
+    
+  
+  
+    for(i = 0; i < DDT["CurrentDriver"]["ColumnCount"]; i++)
+    Log.Message(DDT["CurrentDriver"]["ColumnName"](i) + ": " + aqConvert.VarToStr(DDT["CurrentDriver"]["Value"](i)));
+    
+    Driver["Next"](); // Goes to the next record  
+        
+  }
+  
+  // Closes the driver
+  DDT["CloseDriver"](Driver["Name"]);
+}
+
+
+function CurDriverExample()
+{
+  // Creates a driver
+  DDT.ExcelDriver("C:\\Users\\subhashr\\Documents\\Uline Document\\Uline Document\\Defect Details.xlsx", "Sheet1");
+   
+  // Iterates through records
+  while (! DDT.CurrentDriver.EOF())
+  {
+  //Gets a value from the storage and posts it to the log
+    Log.Message(DDT.CurrentDriver.Value(0));
+    DDT.CurrentDriver.Next();
+  }
+  
+  // Closes the driver
+  DDT.CloseDriver(DDT.CurrentDriver.Name);
+}

@@ -1,0 +1,67 @@
+﻿function readFromExcel(){
+  
+  //var Excel = getActiveXObject("Excel.Application")  
+  
+    var d = new ActiveXObject("Scripting.Dictionary");
+    
+    var sheet = Excel["Open"]("C:\\Users\\subhashr\\Downloads\\Demo.xlsx");
+    
+    var RowCount = sheet["ActiveSheet"]["RowCount"];
+    var Clmcount = sheet["ActiveSheet"]["ColumnCount"];
+
+
+  for (var i = 1; i <= RowCount ;i++)
+  {
+//     var val = "";
+     
+    for (var j = 1; j <= Clmcount+1 ;j++)
+    {
+      
+    var rowval = sheet["ActiveSheet"]["Cell"](i,1).value;
+    var clmval = sheet["ActiveSheet"]["Cell"](i, j).value;
+    
+    Log["Message"](rowval + ":" + clmval)
+    
+//    d["Add"]("rowval", "clmval");
+
+        }
+}
+ 
+var s = d["Item"]("c");
+
+return s;  
+
+  
+}
+
+function ScriptEngin(){
+  
+  var te = readFromExcel()
+  Log["Message"](te)
+}
+
+
+function DictionaryDemo()
+{
+  var d = new ActiveXObject("Scripting.Dictionary");
+  // Add keys and items.
+  d["Add"]("a", "Alphabet");
+  d["Add"]("b", "Book");
+  d["Add"]("c", "Coffee");
+  // Get the item by key.
+  var s = d["Item"]("c");
+  Log["Message"](s);
+  // Assign a new item to the same key.
+  d["Item"]("c") = "Cookie";
+  s = d["Item"]("c");
+  Log["Message"](s);
+  
+  // Assign a new key to the same item.
+  d["Key"]("c") = "Co";
+  // Remove second pair.
+  d["Remove"]("b");
+  if (d["Exists"]("b"))
+      Log["Message"]("The pair exists.")
+    else
+      Log["Message"]("The pair does not exist.")
+}
