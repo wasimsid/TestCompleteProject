@@ -18,11 +18,18 @@ steps:
     inputs:
       targetType: 'inline'
       script: |
-        Write-Host "Running TestComplete tests..."
-        # Run the TestComplete project using TestComplete CLI
-        & "C:\Program Files (x86)\SmartBear\TestComplete 15\Bin\TestComplete.exe" `
-          "C:\agent\_work\1\s\TestCompleteProject\TestCompleteProject.pjs" /run /SilentMode /exit
+        Write-Host "Starting TestComplete..."
+        $testCompletePath = "C:\Program Files (x86)\SmartBear\TestComplete 15\Bin\TestComplete.exe"
+        $projectPath = "C:\agent\_work\1\s\TestCompleteProject\TestCompleteProject.pjs"
+
+        if (Test-Path $testCompletePath) {
+            Write-Host "Running TestComplete with project: $projectPath"
+            Start-Process -FilePath $testCompletePath -ArgumentList "$projectPath /run /SilentMode /exit" -Wait
+        } else {
+            Write-Host "TestComplete executable not found at path: $testCompletePath"
+        }
     displayName: 'Run TestComplete Tests'
+
 
   - task: PublishTestResults@2
     inputs:
