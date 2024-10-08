@@ -1,11 +1,3 @@
-trigger:
-  branches:
-    include:
-      - main
-
-pool:
-  vmImage: 'windows-latest'  # Use 'windows-latest' for Microsoft-hosted agents, or your own self-hosted agent with TestComplete installed
-
 steps:
   - checkout: self
     displayName: 'Checkout Code from Git Repository'
@@ -15,20 +7,25 @@ steps:
       versionSpec: '3.x'
     displayName: 'Use Python 3.x'
 
-  - script: |
-      echo "Installing TestComplete..."
-      # Optional: Download and Install TestComplete if not already available
-      # You can skip this if using a self-hosted agent with TestComplete installed
-      Invoke-WebRequest -Uri "https://testcomplete.com/download/latest" -OutFile "TestCompleteInstaller.exe"
-      Start-Process -FilePath "TestCompleteInstaller.exe" -ArgumentList "/S" -Wait
+  - task: PowerShell@2
+    inputs:
+      targetType: 'inline'
+      script: |
+        Write-Host "Installing TestComplete..."
+        # Optional: Download and Install TestComplete if not already available
+        # You can skip this if using a self-hosted agent with TestComplete installed
+        Invoke-WebRequest -Uri "https://testcomplete.com/download/latest" -OutFile "TestCompleteInstaller.exe"
+        Start-Process -FilePath "TestCompleteInstaller.exe" -ArgumentList "/S" -Wait
     displayName: 'Install TestComplete'
 
-  - powershell: |
-      echo "Running TestComplete tests..."
-      # Run the TestComplete project using TestComplete CLI
-      # Update the paths based on your project structure
-      & "C:\Program Files (x86)\SmartBear\TestComplete 15\Bin\TestComplete.exe" `
-        "C:\agent\_work\1\s\TestCompleteProject\TestCompleteProject.pjs" /run /SilentMode /exit
+  - task: PowerShell@2
+    inputs:
+      targetType: 'inline'
+      script: |
+        Write-Host "Running TestComplete tests..."
+        # Run the TestComplete project using TestComplete CLI
+        & "C:\Program Files (x86)\SmartBear\TestComplete 15\Bin\TestComplete.exe" `
+          "C:\agent\_work\1\s\TestCompleteProject\TestCompleteProject.pjs" /run /SilentMode /exit
     displayName: 'Run TestComplete Tests'
 
   - task: PublishTestResults@2
