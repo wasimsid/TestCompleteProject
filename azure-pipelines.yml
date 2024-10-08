@@ -1,6 +1,10 @@
 trigger:
 - main 
 
+pool:
+  name: 'Default'
+
+  
 steps:
   - checkout: self
     displayName: 'Checkout Code from azure Repository'
