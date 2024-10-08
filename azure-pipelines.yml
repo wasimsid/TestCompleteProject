@@ -1,22 +1,14 @@
+trigger:
+- main 
+
 steps:
   - checkout: self
-    displayName: 'Checkout Code from Git Repository'
+    displayName: 'Checkout Code from azure Repository'
 
   - task: UsePythonVersion@0
     inputs:
       versionSpec: '3.x'
     displayName: 'Use Python 3.x'
-
-  - task: PowerShell@2
-    inputs:
-      targetType: 'inline'
-      script: |
-        Write-Host "Installing TestComplete..."
-        # Optional: Download and Install TestComplete if not already available
-        # You can skip this if using a self-hosted agent with TestComplete installed
-        Invoke-WebRequest -Uri "https://testcomplete.com/download/latest" -OutFile "TestCompleteInstaller.exe"
-        Start-Process -FilePath "TestCompleteInstaller.exe" -ArgumentList "/S" -Wait
-    displayName: 'Install TestComplete'
 
   - task: PowerShell@2
     inputs:
