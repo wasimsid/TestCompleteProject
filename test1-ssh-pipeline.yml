@@ -1,0 +1,28 @@
+trigger:
+  branches:
+    include:
+      - eggplant  # Trigger on changes to the 'eggplant' branch
+
+pool:
+  name: 'EggPlant'  # Specify the pool name
+
+stages:
+  - stage: ExecuteEggPlantScript
+    displayName: 'Execute EggPlant Script'
+    jobs:
+      - job: RunEggPlantScript
+        displayName: 'Run EggPlant Script'
+        steps:
+          - task: SSH@2
+            displayName: 'Connect to Remote Host'
+            inputs:
+              hostname: 155.118.247.49  # Replace with your remote host IP
+              username: pkgtest1.im  # Replace with your username
+              password: Vnc4EggUse  # Replace with your password
+             
+
+          - task: Script@0
+            displayName: 'Execute EggPlant Script'
+            inputs:
+              script: |
+                runscript "C:\IDQ-Automation-EggPlant\Apollo.suite\Scripts\Apollo_Regression\EE_06_ComparisonReport_AND_Collections.script" -host 155.118.247.49 -globalResultsFolder "C:\IDQ-Automation-EggPlant\Apollo.suite\Results\Apollo_Regression\EE_06_ComparisonReport_AND_Collections" -password "Vnc4EggUse"
