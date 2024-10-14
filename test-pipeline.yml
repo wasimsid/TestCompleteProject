@@ -1,0 +1,24 @@
+trigger:
+  branches:
+    include:
+      - eggplant  # Trigger on changes to the 'eggplant' branch
+
+pool:
+  name: 'EggPlant'  # Specify the pool name
+
+stages:
+  - stage: ExecuteBatchFile
+    displayName: 'Execute Batch File'
+    jobs:
+      - job: RunBatchFile
+        displayName: 'Run Batch File'
+        steps:
+          - script: |
+              echo "Starting batch file execution..."
+              "C:\temp\Test.bat"  # Replace with your actual batch file name
+            displayName: 'Execute Batch File'
+            failOnStderr: true  # Fail the job if there are errors
+
+          - script: |
+              echo "Batch file execution completed."
+            displayName: 'Completion Message'
