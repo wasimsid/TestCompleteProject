@@ -15,7 +15,7 @@ stages:
         steps:
           - script: |
               echo "Starting batch file execution..."
-              "C:\temp\Test.bat"  # Replace with your actual batch file name
+              "C:\IDQ-Automation-EggPlant\Test.bat"  # Replace with your actual batch file name
             displayName: 'Execute Batch File'
             failOnStderr: true  # Fail the job if there are errors
 
