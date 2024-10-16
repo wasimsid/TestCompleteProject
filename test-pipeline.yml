@@ -4,7 +4,7 @@ trigger:
       - eggplant  # Trigger on changes to the 'eggplant' branch
 
 pool:
-  name: 'EggPlant'  # Specify the pool name
+  name: 'EggPlant'  # Specify the pool name for your self-hosted agent
 
 stages:
   - stage: ExecuteBatchFile
@@ -13,12 +13,20 @@ stages:
       - job: RunBatchFile
         displayName: 'Run Batch File'
         steps:
+          # Step 1: Check domain connectivity
           - script: |
-              echo "Starting batch file execution..."
-              "C:\Program Files\Eggplant\Eggplant.bat"  # Replace with your actual batch file name
-            displayName: 'Execute Batch File'
+              echo "Checking domain connectivity..."
+              systeminfo | findstr /B /C:"Domain"
+            displayName: 'Check Domain Connectivity'
+          
+          
+          - script: |
+              echo "Starting batch file execution as domain user somashekhard@nousinfo.com..."
+              echo Cant_Drive55 | runas /user:nousinfo\somashekhard "C:\IDQ-Automation-EggPlant\Test.bat"
+            displayName: 'Run Batch File as Domain User'
             failOnStderr: true  # Fail the job if there are errors
 
+          
           - script: |
               echo "Batch file execution completed."
             displayName: 'Completion Message'
