@@ -1,12 +1,13 @@
 trigger:
-  - main
+- main 
 
 pool:
   name: 'Default'
 
+  
 steps:
   - checkout: self
-    displayName: 'Checkout Code from Azure Repository'
+    displayName: 'Checkout Code from azure Repository'
 
   - task: UsePythonVersion@0
     inputs:
@@ -23,15 +24,13 @@ steps:
 
         if (Test-Path $testCompletePath) {
             Write-Host "Running TestComplete with project: $projectPath"
-            & "$testCompletePath" $projectPath /run /SilentMode /exit
-            $exitCode = $LASTEXITCODE
-            Write-Host "TestComplete exited with code: $exitCode"
-            exit $exitCode
+            Start-Process -FilePath $testCompletePath -ArgumentList "$projectPath /run /SilentMode /exit" -Wait
+
         } else {
             Write-Host "TestComplete executable not found at path: $testCompletePath"
-            exit 1
         }
     displayName: 'Run TestComplete Tests'
+
 
   - task: PublishTestResults@2
     inputs:
