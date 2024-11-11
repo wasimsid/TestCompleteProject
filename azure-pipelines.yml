@@ -1,36 +1,44 @@
 trigger:
-- main 
+- main  # Trigger pipeline on push to main branch
 
 pool:
-  name: 'Default'
+  name: 'Default'  # Using the default self-hosted agent pool
 
-  
 steps:
   - checkout: self
-    displayName: 'Checkout Code from azure Repository'
+    displayName: 'Checkout Code from Azure Repository'
 
   - task: UsePythonVersion@0
     inputs:
       versionSpec: '3.x'
-    displayName: 'Use Python 3.x'
+    displayName: 'Use Python 3.x'  # If needed for any tests or dependencies
 
   - task: PowerShell@2
     inputs:
       targetType: 'inline'
       script: |
-        Write-Host "Starting TestComplete..."
+        Write-Host "Starting TestComplete remotely..."
+
+        # Define remote machine details
+        $remoteComputerName = "NIBC2037"
+        $remoteUser = "shaikwasima@nousinfo.com"
+        $remotePassword = "Welcome@123"  # Be careful with storing passwords in plain text. Use Azure Key Vault for secure storage.
         $testCompletePath = "C:\Program Files (x86)\SmartBear\TestComplete 15\Bin\TestComplete.exe"
         $projectPath = "C:\agent\_work\1\s\TestCompleteProject\TestCompleteProject.pjs"
 
-        if (Test-Path $testCompletePath) {
-            Write-Host "Running TestComplete with project: $projectPath"
+        # Use PowerShell Remoting to invoke TestComplete on the remote machine
+        $securePassword = ConvertTo-SecureString -String $remotePassword -AsPlainText -Force
+        $credential = New-Object System.Management.Automation.PSCredential ($remoteUser, $securePassword)
+
+        Invoke-Command -ComputerName $remoteComputerName -Credential $credential -ScriptBlock {
+            param (
+                $testCompletePath,
+                $projectPath
+            )
+            Write-Host "Running TestComplete on remote machine with project: $projectPath"
             Start-Process -FilePath $testCompletePath -ArgumentList "$projectPath /run /SilentMode /exit" -Wait
-
-        } else {
-            Write-Host "TestComplete executable not found at path: $testCompletePath"
-        }
-    displayName: 'Run TestComplete Tests'
-
+        } -ArgumentList $testCompletePath, $projectPath
+    displayName: 'Run TestComplete Tests Remotely'
 
   - task: PublishTestResults@2
     inputs:
