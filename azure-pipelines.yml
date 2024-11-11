@@ -1,33 +1,37 @@
 trigger:
-  - main 
+- main 
 
 pool:
-  name: 'Default'  # Default pool with self-hosted agent NIBC2037
-  demands:
-    - agent.name -equals NIBC2037
+  name: 'Default'
 
+  
 steps:
   - checkout: self
-    displayName: 'Checkout Code from Azure Repository'
+    displayName: 'Checkout Code from azure Repository'
 
-  # Run TestComplete tests
-  - script: |
-      set "testCompletePath=C:\Program Files (x86)\SmartBear\TestComplete 15\Bin\TestComplete.exe"
-      set "projectPath=%AGENT_WORKFOLDER%\s\TestCompleteProject\TestCompleteProject.pjs"
-      
-      if exist "%testCompletePath%" (
-          echo Running TestComplete with project: "%projectPath%"
-          "%testCompletePath%" "%projectPath%" /run /SilentMode /exit
-          set exitCode=%errorlevel%
-          echo Exit code: %exitCode%
-          exit /b %exitCode%
-      ) else (
-          echo TestComplete executable not found at path: "%testCompletePath%"
-          exit /b 1
-      )
+  - task: UsePythonVersion@0
+    inputs:
+      versionSpec: '3.x'
+    displayName: 'Use Python 3.x'
+
+  - task: PowerShell@2
+    inputs:
+      targetType: 'inline'
+      script: |
+        Write-Host "Starting TestComplete..."
+        $testCompletePath = "C:\Program Files (x86)\SmartBear\TestComplete 15\Bin\TestComplete.exe"
+        $projectPath = "C:\agent\_work\1\s\TestCompleteProject\TestCompleteProject.pjs"
+
+        if (Test-Path $testCompletePath) {
+            Write-Host "Running TestComplete with project: $projectPath"
+            Start-Process -FilePath $testCompletePath -ArgumentList "$projectPath /run /SilentMode /exit" -Wait
+
+        } else {
+            Write-Host "TestComplete executable not found at path: $testCompletePath"
+        }
     displayName: 'Run TestComplete Tests'
 
-  # Publish Test Results
+
   - task: PublishTestResults@2
     inputs:
       testResultsFormat: 'JUnit'
