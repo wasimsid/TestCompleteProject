@@ -24,7 +24,8 @@ steps:
 
         if (Test-Path $testCompletePath) {
             Write-Host "Running TestComplete with project: $projectPath"
-            Start-Process -FilePath $testCompletePath -ArgumentList "$projectPath /run /SilentMode /exit" -Wait
+            Start-Process -FilePath $testCompletePath -ArgumentList "$projectPath /run /SilentMode /exit /NoGui"
+
         } else {
             Write-Host "TestComplete executable not found at path: $testCompletePath"
         }
