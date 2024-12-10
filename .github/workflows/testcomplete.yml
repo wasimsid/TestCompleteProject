@@ -16,13 +16,28 @@ jobs:
       - name: Run TestComplete Tests
         shell: powershell
         run: |
+          # Define paths for TestComplete and the correct project file path
           $testCompletePath = "C:\Program Files (x86)\SmartBear\TestComplete 15\Bin\TestComplete.exe"
-          $projectPath = "${{ github.workspace }}\TestCompleteProject.pjs"
+          $projectPath = "C:\actions-runner\_work\TestCompleteProject\TestCompleteProject\TestCompleteProject\TestCompleteProject.pjs"
 
+          # Log paths to check if they are correct
+          Write-Host "TestComplete Path: $testCompletePath"
+          Write-Host "Project Path: $projectPath"
+
+          # Check if TestComplete exists at the specified path
           if (Test-Path $testCompletePath) {
-              & "$testCompletePath" "$projectPath" /run /exit
+              Write-Host "Launching TestComplete with project: $projectPath"
+              
+              # Run TestComplete with /run and /exit flags, and log output to a file
+              & "$testCompletePath" "$projectPath" /run /exit /log "C:\TestCompleteLog.txt"
+              
+              # Check if the execution was successful (using exit code)
+              if ($LASTEXITCODE -ne 0) {
+                  Write-Host "TestComplete execution failed with exit code $LASTEXITCODE"
+                  exit $LASTEXITCODE
+              }
           } else {
-              Write-Host "TestComplete executable not found."
+              Write-Host "TestComplete executable not found at: $testCompletePath"
               exit 1
           }
 
@@ -31,3 +46,9 @@ jobs:
         with:
           name: TestResults
           path: '**/TestResults/*.xml'
+          
+      - name: Upload TestComplete Logs
+        uses: actions/upload-artifact@v3
+        with:
+          name: TestComplete Logs
+          path: 'C:\TestCompleteLog.txt'
