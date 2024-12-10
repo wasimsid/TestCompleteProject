@@ -1,0 +1,33 @@
+name: TestComplete CI/CD
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  testcomplete:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Run TestComplete Tests
+        run: |
+          @echo off
+          set "testCompletePath=C:\Program Files (x86)\SmartBear\TestComplete 15\Bin\TestComplete.exe"
+          set "projectPath=${{ github.workspace }}\TestCompleteProject.pjs"
+
+          if exist "%testCompletePath%" (
+              "%testCompletePath%" "%projectPath%" /run /exit
+          ) else (
+              echo "TestComplete executable not found."
+              exit /b 1
+          )
+
+      - name: Publish Test Results
+        uses: actions/upload-artifact@v3
+        with:
+          name: TestResults
+          path: '**/TestResults/*.xml'
