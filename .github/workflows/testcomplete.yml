@@ -9,7 +9,7 @@ on:
 jobs:
   run-testcomplete:
     name: Run TestComplete Tests
-    runs-on: [self-hosted, windows] # Ensure the runner is a self-hosted Windows machine
+    runs-on: self-hosted 
     steps:
       # Step 1: Verify TestComplete Installation
       - name: Verify TestComplete Installation
