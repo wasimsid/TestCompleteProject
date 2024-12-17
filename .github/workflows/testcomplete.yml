@@ -1,4 +1,4 @@
-name: TestComplete CI/CD
+name: Run TestComplete Tests
 
 on:
   push:
@@ -7,49 +7,55 @@ on:
   workflow_dispatch:
 
 jobs:
-  testcomplete:
-    runs-on: self-hosted
+  testcomplete-execution:
+    runs-on: windows-latest
+
     steps:
+      # Step 1: Checkout Code
       - name: Checkout Code
         uses: actions/checkout@v3
 
-      - name: Run TestComplete Tests
-        shell: powershell
+      # Step 2: Set Up TestComplete Environment
+      - name: Set Up TestComplete
+        shell: pwsh
         run: |
-          # Define paths for TestComplete and the correct project file path
+          Write-Host "Verifying TestComplete Installation..."
+          $testCompletePath = "C:\Program Files (x86)\SmartBear\TestComplete 15\Bin\TestComplete.exe"
+          if (-Not (Test-Path $testCompletePath)) {
+            Write-Host "TestComplete is not installed at $testCompletePath"
+            exit 1
+          }
+          Write-Host "TestComplete is installed and ready to use."
+
+      # Step 3: Run TestComplete Tests
+      - name: Run TestComplete
+        shell: pwsh
+        run: |
           $testCompletePath = "C:\Program Files (x86)\SmartBear\TestComplete 15\Bin\TestComplete.exe"
           $projectPath = "C:\actions-runner\_work\TestCompleteProject\TestCompleteProject\TestCompleteProject\TestCompleteProject.pjs"
           
-          # Log paths to check if they are correct
-          Write-Host "TestComplete Path: $testCompletePath"
-          Write-Host "Project Path: $projectPath"
+          Write-Host "Launching TestComplete with project: $projectPath"
+          Start-Process -FilePath $testCompletePath -ArgumentList "$projectPath /run /SilentMode /exit" -Wait -NoNewWindow
 
-          # Check if TestComplete exists at the specified path
-          if (Test-Path $testCompletePath) {
-              Write-Host "Launching TestComplete with project: $projectPath"
-
-              # Run TestComplete with /run, /exit, /silent, and /log flags for detailed output
-              & "$testCompletePath" "$projectPath" /run /exit /silent /log "C:\TestCompleteLog.txt"
-
-              # Check if the execution was successful (using exit code)
-              if ($LASTEXITCODE -ne 0) {
-                  Write-Host "TestComplete execution failed with exit code $LASTEXITCODE"
-                  Write-Host "Check the log file for more details: C:\TestCompleteLog.txt"
-                  exit $LASTEXITCODE
-              }
+          if ($LASTEXITCODE -ne 0) {
+            Write-Host "TestComplete execution failed with exit code $LASTEXITCODE"
+            Write-Host "Check the log file for more details: C:\TestCompleteLog.txt"
+            exit 1
           } else {
-              Write-Host "TestComplete executable not found at: $testCompletePath"
-              exit 1
+            Write-Host "TestComplete execution succeeded!"
           }
 
+      # Step 4: Publish Test Results
       - name: Publish Test Results
         uses: actions/upload-artifact@v3
         with:
-          name: TestResults
-          path: '**/TestResults/*.xml'
-          
-      - name: Upload TestComplete Logs
-        uses: actions/upload-artifact@v3
-        with:
-          name: TestComplete Logs
-          path: 'C:\TestCompleteLog.txt'
+          name: TestComplete-Results
+          path: C:\TestCompleteLog.txt
+
+      # Step 5: Cleanup
+      - name: Cleanup Temporary Files
+        shell: pwsh
+        run: |
+          Write-Host "Cleaning up temporary files and logs..."
+          Remove-Item -Path "C:\TestCompleteLog.txt" -ErrorAction SilentlyContinue
+          Write-Host "Cleanup complete!"
