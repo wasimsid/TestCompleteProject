@@ -1,61 +1,57 @@
-name: Run TestComplete Tests
+name: TestComplete Execution Pipeline
 
 on:
   push:
     branches:
       - main
-  workflow_dispatch:
+  workflow_dispatch: # Allows manual triggering of the pipeline
 
 jobs:
-  testcomplete-execution:
-    runs-on: self-hosted
-
+  run-testcomplete:
+    name: Run TestComplete Tests
+    runs-on: [self-hosted, windows] # Ensure the runner is a self-hosted Windows machine
     steps:
-      # Step 1: Checkout Code
-      - name: Checkout Code
-        uses: actions/checkout@v3
-
-      # Step 2: Set Up TestComplete Environment
-      - name: Set Up TestComplete
+      # Step 1: Verify TestComplete Installation
+      - name: Verify TestComplete Installation
         shell: powershell
         run: |
-          Write-Host "Verifying TestComplete Installation..."
           $testCompletePath = "C:\Program Files (x86)\SmartBear\TestComplete 15\Bin\TestComplete.exe"
+          Write-Host "Verifying TestComplete Installation..."
           if (-Not (Test-Path $testCompletePath)) {
             Write-Host "TestComplete is not installed at $testCompletePath"
             exit 1
           }
           Write-Host "TestComplete is installed and ready to use."
 
-      # Step 3: Run TestComplete Tests
-      - name: Run TestComplete
+      # Step 2: Checkout the repository
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # Step 3: Run TestComplete Project
+      - name: Run TestComplete Tests
         shell: powershell
         run: |
           $testCompletePath = "C:\Program Files (x86)\SmartBear\TestComplete 15\Bin\TestComplete.exe"
           $projectPath = "C:\actions-runner\_work\TestCompleteProject\TestCompleteProject\TestCompleteProject\TestCompleteProject.pjs"
-          
           Write-Host "Launching TestComplete with project: $projectPath"
-          Start-Process -FilePath $testCompletePath -ArgumentList "$projectPath /run /SilentMode /exit" -Wait -NoNewWindow
 
+          # Run TestComplete non-interactively
+          & "$testCompletePath" "$projectPath" /run /SilentMode /exit
+
+          # Error handling
           if ($LASTEXITCODE -ne 0) {
             Write-Host "TestComplete execution failed with exit code $LASTEXITCODE"
-            Write-Host "Check the log file for more details: C:\TestCompleteLog.txt"
+            Write-Host "Check the log file for more details."
             exit 1
-          } else {
-            Write-Host "TestComplete execution succeeded!"
           }
+          Write-Host "TestComplete execution succeeded!"
 
-      # Step 4: Publish Test Results
-      - name: Publish Test Results
+      # Step 4: Publish Logs (Optional)
+      - name: Upload TestComplete Logs
         uses: actions/upload-artifact@v3
         with:
-          name: TestComplete-Results
+          name: TestComplete-Logs
           path: C:\TestCompleteLog.txt
-
-      # Step 5: Cleanup
-      - name: Cleanup Temporary Files
-        shell: pwsh
-        run: |
-          Write-Host "Cleaning up temporary files and logs..."
-          Remove-Item -Path "C:\TestCompleteLog.txt" -ErrorAction SilentlyContinue
-          Write-Host "Cleanup complete!"
+          if-no-files-found: ignore
