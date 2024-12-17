@@ -37,9 +37,7 @@ jobs:
           $projectPath = "C:\actions-runner\_work\TestCompleteProject\TestCompleteProject\TestCompleteProject\TestCompleteProject.pjs"
           Write-Host "Launching TestComplete with project: $projectPath"
 
-          # Run TestComplete non-interactively
-          & "$testCompletePath" "$projectPath" /run /SilentMode /exit
-
+          
           # Error handling
           if ($LASTEXITCODE -ne 0) {
             Write-Host "TestComplete execution failed with exit code $LASTEXITCODE"
