@@ -36,13 +36,14 @@ jobs:
           $testCompletePath = "C:\Program Files (x86)\SmartBear\TestComplete 15\Bin\TestComplete.exe"
           $projectPath = "C:\actions-runner\_work\TestCompleteProject\TestCompleteProject\TestCompleteProject\TestCompleteProject.pjs"
           Write-Host "Launching TestComplete with project: $projectPath"
-
           
-          # Error handling
-          if ($LASTEXITCODE -ne 0) {
-            Write-Host "TestComplete execution failed with exit code $LASTEXITCODE"
+          & $testCompletePath $projectPath
+          $exitCode = $LASTEXITCODE
+          
+          if ($exitCode -ne 0) {
+            Write-Host "TestComplete execution failed with exit code $exitCode"
             Write-Host "Check the log file for more details."
-            exit 1
+            exit $exitCode
           }
           Write-Host "TestComplete execution succeeded!"
 
