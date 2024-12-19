@@ -39,7 +39,7 @@ jobs:
           Write-Host "Launching TestComplete with project: $projectPath"
 
           # Execute TestComplete and capture the exit code
-          & $testCompletePath $projectPath /LogFile=$logFilePath
+          & $testCompletePath /project $projectPath /LogFile $logFilePath
           $exitCode = $LASTEXITCODE
           
           # Verify that the log file was created
