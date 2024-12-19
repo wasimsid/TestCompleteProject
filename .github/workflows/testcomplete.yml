@@ -22,6 +22,7 @@ jobs:
             exit 1
           }
           Write-Host "TestComplete is installed and ready to use."
+
       # Step 2: Checkout the repository
       - name: Checkout Code
         uses: actions/checkout@v4
@@ -36,15 +37,24 @@ jobs:
           $projectPath = "C:\actions-runner\_work\TestCompleteProject\TestCompleteProject\TestCompleteProject\TestCompleteProject.pjs"
           Write-Host "Launching TestComplete with project: $projectPath"
           
-          & $testCompletePath $projectPath
-          $exitCode = $LASTEXITCODE
+          # Check if project exists
+          Write-Host "Checking if the TestComplete project exists at: $projectPath"
+          if (-Not (Test-Path $projectPath)) {
+            Write-Host "TestComplete project file does not exist at $projectPath"
+            exit 1
+          }
+
+          # Run TestComplete in silent mode with logging
+          & $testCompletePath $projectPath /Silent /r /Log "C:\TestCompleteLog.txt"
           
+          $exitCode = $LASTEXITCODE
           if ($exitCode -ne 0) {
             Write-Host "TestComplete execution failed with exit code $exitCode"
             Write-Host "Check the log file for more details."
             exit $exitCode
           }
           Write-Host "TestComplete execution succeeded!"
+
       # Step 4: Publish Logs (Optional)
       - name: Upload TestComplete Logs
         uses: actions/upload-artifact@v3
