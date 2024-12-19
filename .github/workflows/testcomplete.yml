@@ -9,7 +9,7 @@ on:
 jobs:
   run-testcomplete:
     name: Run TestComplete Tests
-    runs-on: self-hosted 
+    runs-on: Self-hosted 
     steps:
       # Step 1: Verify TestComplete Installation
       - name: Verify TestComplete Installation
