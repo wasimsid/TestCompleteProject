@@ -22,7 +22,6 @@ jobs:
             exit 1
           }
           Write-Host "TestComplete is installed and ready to use."
-
       # Step 2: Checkout the repository
       - name: Checkout Code
         uses: actions/checkout@v4
@@ -35,31 +34,17 @@ jobs:
         run: |
           $testCompletePath = "C:\Program Files (x86)\SmartBear\TestComplete 15\Bin\TestComplete.exe"
           $projectPath = "C:\actions-runner\_work\TestCompleteProject\TestCompleteProject\TestCompleteProject\TestCompleteProject.pjs"
-          $logFilePath = "C:\TestCompleteLog.txt"
           Write-Host "Launching TestComplete with project: $projectPath"
-
-          # Execute TestComplete and capture the exit code
-          & $testCompletePath /project $projectPath /LogFile $logFilePath
+          
+          & $testCompletePath $projectPath
           $exitCode = $LASTEXITCODE
           
-          # Verify that the log file was created
-          if (-Not (Test-Path $logFilePath)) {
-            Write-Host "Log file was not created at $logFilePath"
-            exit 1
-          }
-
-          # Print the log file content for debugging (optional)
-          Write-Host "Log file content:"
-          Get-Content $logFilePath | Write-Host
-
-          # Error handling
           if ($exitCode -ne 0) {
             Write-Host "TestComplete execution failed with exit code $exitCode"
             Write-Host "Check the log file for more details."
             exit $exitCode
           }
           Write-Host "TestComplete execution succeeded!"
-
       # Step 4: Publish Logs (Optional)
       - name: Upload TestComplete Logs
         uses: actions/upload-artifact@v3
